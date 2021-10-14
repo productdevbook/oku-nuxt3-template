@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "nuxt3": "3.0.0-27237089.3e38eb8",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
     "tailwindcss": "^2.2.17"
   }
 }
