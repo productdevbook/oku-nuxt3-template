@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "allupdate": "yarn upgrade-interactive --latest"
+  },
+  "devDependencies": {
+    "nuxt3": "3.0.0-27237089.3e38eb8"
+  }
+}
