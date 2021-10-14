@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- Remove this component to get started! -->
-    <NuxtWelcome />
+   merhaba
   </div>
 </template>
