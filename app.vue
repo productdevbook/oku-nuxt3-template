@@ -8,3 +8,9 @@ import './assets/tailwind.scss'
     <NuxtPage />
   </div>
 </template>
+
+<style lang="scss">
+body{
+  @apply bg-gray-800;
+}
+</style>

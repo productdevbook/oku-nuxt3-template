@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-red-500">
+  <div class="text-white font-semibold p-4">
     test
   </div>
 </template>

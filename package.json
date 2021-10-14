@@ -7,7 +7,9 @@
     "allupdate": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.7",
     "nuxt3": "3.0.0-27237089.3e38eb8",
+    "postcss": "^8.3.9",
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
     "tailwindcss": "^2.2.17"
