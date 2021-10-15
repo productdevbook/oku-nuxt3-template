@@ -1,5 +1,5 @@
 <script  lang="ts">
-import { useCounter } from "~/stores/counter";
+import { useCounter } from "~/store/counter";
 
 export default {
     setup() {
