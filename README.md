@@ -3,7 +3,7 @@
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/web2033/vite-vue3-tailwind-starter)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productfrontenddeveloper/nuxt3-app)
 
 This starter template also includes:
 
