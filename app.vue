@@ -13,4 +13,7 @@ import './assets/tailwind.scss'
 body {
   @apply bg-gray-50 dark:bg-gray-900;
 }
+.global-text {
+  @apply text-gray-900 dark:text-gray-50;
+}
 </style>
