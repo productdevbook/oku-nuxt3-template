@@ -1,5 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
+    <button @click="open = !open" class="bg-white p-4 rounded-lg">Open Modal</button>
     <TransitionRoot as="template" :show="open">
         <Dialog as="div" class="fixed z-10 inset-0 overflow-y-auto" @close="open = false">
             <div
