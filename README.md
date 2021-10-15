@@ -21,6 +21,10 @@ First-party plugins needed for Tailwind UI:
 - [tailwindcss/line-clamp](https://github.com/tailwindlabs/tailwindcss-line-clamp)
 - [tailwindcss/aspect-ratio](https://github.com/tailwindlabs/tailwindcss-aspect-ratio)
 
+
+Best Nuxt with Plugins:
+- [Pinia](https://github.com/posva/pinia)
+
 ## Setup
 
 Make sure to install the dependencies
