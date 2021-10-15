@@ -5,6 +5,8 @@ We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productfrontenddeveloper/nuxt3-app)
 
+Preview any repro live on [Deploy to StackBlitz](http://stackblitz.com/github/productfrontenddeveloper/nuxt3-app):
+
 This starter template also includes:
 
 - [Tailwind CSS v3.0.0-alpha ⚠](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.0.0-alpha.1)
