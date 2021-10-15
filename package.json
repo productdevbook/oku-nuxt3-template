@@ -13,5 +13,9 @@
     "sass": "^1.43.2",
     "sass-loader": "^12.2.0",
     "tailwindcss": "^2.2.17"
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.4.1",
+    "@heroicons/vue": "^1.0.4"
   }
 }

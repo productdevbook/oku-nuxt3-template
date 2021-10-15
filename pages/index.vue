@@ -6,5 +6,6 @@
             class="text-green-500"
             href="https://github.com/productfrontenddeveloper/"
         >Follow Me Github</a>
+        <NuxtLink to="modal">Modal</NuxtLink>
     </div>
 </template>
