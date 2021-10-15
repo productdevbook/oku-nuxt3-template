@@ -10,7 +10,7 @@ import './assets/tailwind.scss'
 </template>
 
 <style lang="scss">
-body{
-  @apply bg-gray-800;
+body {
+  @apply bg-gray-50;
 }
 </style>
