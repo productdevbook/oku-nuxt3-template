@@ -45,8 +45,8 @@ export default {
     setup() {
         const router = useRouter()
         const lists = ref<links[]>([
-            { id: 1, title: 'Pinia Store', url: router.push({ name: 'pinia' }) },
-            { id: 1, title: 'Modal', url: '' },
+            { id: 1, title: 'Pinia Store', url: 'pinia' },
+            { id: 1, title: 'Modal', url: 'modal' },
             { id: 1, title: 'New soon...', url: '' },
         ])
         return {
