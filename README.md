@@ -11,7 +11,7 @@ We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productdevbook/nuxt3-app)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/github/productdevbook/nuxt3-app)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/productdevbook/nuxt3-app)
 
 This starter template also includes:
 
