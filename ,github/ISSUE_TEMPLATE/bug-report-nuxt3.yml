@@ -1,0 +1,37 @@
+name: "\U0001F41E Bug report (Nuxt 3)"
+description: Create a report to help us improve Nuxt 3
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please carefully read the contribution docs before creating a bug report
+        👉 https://v3.nuxtjs.org/community/reporting-bugs
+  - type: textarea
+    id: bug-env
+    attributes:
+      label: Environment
+      description: You can use `npx nuxi info` to fill this section
+      placeholder: Environment
+    validations:
+      required: true
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the bug
+      description: A clear and concise description of what the bug is. If you intend to submit a PR for this issue, tell us in the description. Thanks!
+      placeholder: Bug description
+    validations:
+      required: true
+  - type: textarea
+    id: additonal
+    attributes:
+      label: Additional context
+      description: If applicable, add any other context about the problem here`
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: |
+        Optional if provided reproduction. Please try not to insert an image but copy paste the log text.
+      render: shell
