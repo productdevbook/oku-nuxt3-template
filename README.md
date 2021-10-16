@@ -2,10 +2,16 @@
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
+## Preview
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productfrontenddeveloper/nuxt3-app)
 
-Preview any repro live on [Deploy to StackBlitz](http://stackblitz.com/github/productfrontenddeveloper/nuxt3-app):
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/productdevbook/nuxt3-app)
+
+## Deploy your own
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/productdevbook/nuxt3-app)
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/github/productdevbook/nuxt3-app)
 
 This starter template also includes:
 
