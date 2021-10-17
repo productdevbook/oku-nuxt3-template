@@ -23,5 +23,8 @@
     "@tailwindcss/line-clamp": "0.2.2",
     "@tailwindcss/typography": "0.5.0-alpha.2",
     "pinia": "2.0.0-rc.13"
+  },
+  "engines": {
+    "node": "14.18.0"
   }
 }
