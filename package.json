@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.3.7",
-    "nuxt3": "3.0.0-27237303.6acfdcd",
+    "nuxt3": "3.0.0-27242401.39ed77e",
     "postcss": "8.3.9",
     "sass": "1.43.2",
     "sass-loader": "12.2.0",
