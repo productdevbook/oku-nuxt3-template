@@ -81,6 +81,8 @@ info Color legend :
 ❯◯ nuxt3  latest  3.0.0-27237303.6acfdcd  ❯  3.0.0-27238235.a1bcc53  
 ```
 
-
+## Stay in touch
+- Website - [https://productdevbook.com](https://productdevbook.com/)
+- Twitter - [@productdevbook](https://twitter.com/productdevbook)
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
