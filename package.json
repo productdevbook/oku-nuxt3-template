@@ -7,8 +7,8 @@
     "allupdate": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
-    "autoprefixer": "10.3.7",
-    "nuxt3": "3.0.0-27255771.f78ec93",
+    "autoprefixer": "10.4.0",
+    "nuxt3": "3.0.0-27258467.4e424d0",
     "postcss": "8.3.11",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
