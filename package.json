@@ -8,21 +8,21 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.0",
-    "nuxt3": "3.0.0-27258467.4e424d0",
+    "nuxt3": "3.0.0-27268729.5b8e10f",
     "postcss": "8.3.11",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
     "tailwindcss": "3.0.0-alpha.1"
   },
   "dependencies": {
-    "@headlessui/vue": "^0.0.0-dev.2599655",
+    "@headlessui/vue": "^0.0.0-dev.39b1646",
     "@heroicons/vue": "1.0.5",
-    "@pinia/nuxt": "0.1.0",
+    "@pinia/nuxt": "0.1.2",
     "@tailwindcss/aspect-ratio": "0.3.0",
     "@tailwindcss/forms": "0.4.0-alpha.1",
     "@tailwindcss/line-clamp": "0.2.2",
     "@tailwindcss/typography": "0.5.0-alpha.2",
-    "pinia": "2.0.0"
+    "pinia": "2.0.2"
   },
   "engines": {
     "node": "^14.16.0 || ^16.11.0 || ^17.0.0"
