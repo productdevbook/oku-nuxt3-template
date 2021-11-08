@@ -8,14 +8,14 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.0",
-    "nuxt3": "3.0.0-27268729.5b8e10f",
+    "nuxt3": "3.0.0-27272804.ca557e7",
     "postcss": "8.3.11",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
     "tailwindcss": "3.0.0-alpha.1"
   },
   "dependencies": {
-    "@headlessui/vue": "^0.0.0-dev.39b1646",
+    "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "1.0.5",
     "@pinia/nuxt": "0.1.2",
     "@tailwindcss/aspect-ratio": "0.3.0",
