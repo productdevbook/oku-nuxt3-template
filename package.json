@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.0",
-    "nuxt3": "3.0.0-27272804.ca557e7",
+    "nuxt3": "3.0.0-27277330.202617b",
     "postcss": "8.3.11",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
@@ -17,12 +17,12 @@
   "dependencies": {
     "@headlessui/vue": "^1.4.2",
     "@heroicons/vue": "1.0.5",
-    "@pinia/nuxt": "0.1.2",
+    "@pinia/nuxt": "0.1.5",
     "@tailwindcss/aspect-ratio": "0.3.0",
     "@tailwindcss/forms": "0.4.0-alpha.1",
     "@tailwindcss/line-clamp": "0.2.2",
     "@tailwindcss/typography": "0.5.0-alpha.2",
-    "pinia": "2.0.2"
+    "pinia": "2.0.3"
   },
   "engines": {
     "node": "^14.16.0 || ^16.11.0 || ^17.0.0"
