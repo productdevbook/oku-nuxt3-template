@@ -1,9 +1,9 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
     buildModules: [
         // pinia plugin - https://pinia.esm.dev
-        ['@pinia/nuxt']
+        "@pinia/nuxt",
     ],
     build: {
         postcss: {
@@ -11,8 +11,16 @@ export default defineNuxtConfig({
                 plugins: {
                     tailwindcss: {},
                     autoprefixer: {},
-                }
-            }
+                },
+            },
         },
+    },
+    vite: {
+        logLevel: "info",
+        optimizeDeps: {
+            include: [
+                '@headlessui/vue', '@heroicons/vue/solid', '@heroicons/vue/outline', 'vue', 'pinia'
+            ]
+        }
     }
-})
+});
