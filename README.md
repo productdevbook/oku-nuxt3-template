@@ -15,7 +15,7 @@ We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 This starter template also includes:
 
-- [Tailwind CSS v3.0.0-alpha ⚠](https://github.com/tailwindlabs/tailwindcss/releases/tag/v3.0.0-alpha.1)
+- [Tailwind CSS v3](https://github.com/tailwindlabs/tailwindcss)
 - [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
 - [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
 by the makers of Tailwind CSS
