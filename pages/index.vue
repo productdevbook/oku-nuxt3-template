@@ -10,9 +10,9 @@
             />
             <a
                 target="blank"
-                class="ml-4 text-green-900 dark:text-green-400 font-bold"
+                class="ml-4 text-red-400 dark:text-green-400 font-bold"
                 href="https://github.com/productdevbook"
-            >Follow Me Github sadsad </a>
+            >Follow Me Github</a>
         </div>
         <ul role="list" class="mt-10 space-y-4">
             <li v-for="item in lists" :key="item.id">
