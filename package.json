@@ -8,11 +8,11 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.2",
-    "nuxt3": "3.0.0-27408103.b243891",
+    "nuxt3": "3.0.0-27409835.c53c736",
     "postcss": "8.4.6",
     "sass": "1.49.7",
     "sass-loader": "12.4.0",
-    "tailwindcss": "3.0.19"
+    "tailwindcss": "3.0.22"
   },
   "dependencies": {
     "@headlessui/vue": "1.4.3",
