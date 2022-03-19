@@ -4,27 +4,28 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
-    "allupdate": "yarn upgrade-interactive --latest"
+    "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
-    "autoprefixer": "10.4.2",
-    "nuxt3": "3.0.0-27409835.c53c736",
-    "postcss": "8.4.6",
-    "sass": "1.49.7",
-    "sass-loader": "12.4.0",
-    "tailwindcss": "3.0.22"
+    "autoprefixer": "10.4.4",
+    "nuxt3": "3.0.0-27460489.53fbca7",
+    "postcss": "8.4.12",
+    "sass": "1.49.9",
+    "sass-loader": "12.6.0",
+    "tailwindcss": "3.0.23"
   },
   "dependencies": {
     "@headlessui/vue": "1.4.3",
-    "@heroicons/vue": "1.0.5",
+    "@heroicons/vue": "1.0.6",
     "@pinia/nuxt": "0.1.8",
     "@tailwindcss/aspect-ratio": "0.4.0",
-    "@tailwindcss/forms": "0.4.0",
+    "@tailwindcss/forms": "0.5.0",
     "@tailwindcss/line-clamp": "0.3.1",
-    "@tailwindcss/typography": "0.5.1",
-    "pinia": "2.0.11"
+    "@tailwindcss/typography": "0.5.2",
+    "pinia": "2.0.12"
   },
   "engines": {
     "node": "^14.16.0 || ^16.11.0 || ^17.0.0"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }

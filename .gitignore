@@ -3,3 +3,10 @@ node_modules
 .nuxt
 nuxt.d.ts
 .output
+
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
