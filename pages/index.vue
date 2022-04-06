@@ -10,7 +10,7 @@
             />
             <a
                 target="blank"
-                class="ml-4 text-red-400 dark:text-green-400 font-bold"
+                class="ml-4 text-blue-400 dark:text-green-400 font-bold"
                 href="https://github.com/productdevbook"
             >Follow Me Github</a>
         </div>
