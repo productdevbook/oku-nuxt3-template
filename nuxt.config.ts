@@ -16,6 +16,12 @@ export default defineNuxtConfig({
             },
         },
     },
+    postcss: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+    },
     vite: {
         logLevel: "info",
         optimizeDeps: {
