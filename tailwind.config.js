@@ -1,15 +1,15 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  content: {
-    files: [
-      "./components/**/*.{vue,js}",
-      "./layouts/**/*.vue",
-      "./pages/**/*.vue",
-      "./app.vue",
-      "./plugins/**/*.{js,ts}",
-    ],
-  },
+  content: [
+    "./components/**/*.{js,vue,ts}",
+    "./layouts/**/*.vue",
+    "./pages/**/*.vue",
+    "./plugins/**/*.{js,ts}",
+    "./app.vue",
+    "./assets/**/*.scss",
+    "./assets/**/*.css",
+  ],
   theme: {
     extend: {
       fontFamily: {
