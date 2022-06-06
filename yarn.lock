@@ -359,6 +359,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@csstools/selector-specificity@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@csstools/selector-specificity@npm:2.0.0"
+  peerDependencies:
+    postcss: ^8.3
+    postcss-selector-parser: ^6.0.10
+  checksum: 46bc5a941334393ed596d493fc66c57e0839150ca86692b269f230641d0f073f258eb32fce289b8ab8a12e73b3329d266d4626b08a8705429f8a12929a8f64ae
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -366,12 +376,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/vue@npm:1.6.1":
-  version: 1.6.1
-  resolution: "@headlessui/vue@npm:1.6.1"
+"@headlessui/vue@npm:1.6.4":
+  version: 1.6.4
+  resolution: "@headlessui/vue@npm:1.6.4"
   peerDependencies:
     vue: ^3.2.0
-  checksum: 57d1cc82c72f8399707d443e24818ce7963c170128b419e41cc095078b6ac614f680138c83cde74c6c6076dadb84882e2413f01040a21647582aaa4fecbd92d2
+  checksum: 91dbd6b6b0ee492472036999f35fd86ad6e2d1180546b35558a0b75f8c5a3182b4fce9a7145ac4f4960141d3284475156c88ae93c7a298256ddd68f7e8fa160b
   languageName: node
   linkType: hard
 
@@ -536,7 +546,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.0.0-rc.2, @nuxt/kit@npm:^3.0.0-rc.3":
+"@nuxt/kit@npm:^3.0.0-rc.3":
   version: 3.0.0-rc.3
   resolution: "@nuxt/kit@npm:3.0.0-rc.3"
   dependencies:
@@ -689,25 +699,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:5.0.4":
-  version: 5.0.4
-  resolution: "@nuxtjs/tailwindcss@npm:5.0.4"
+"@nuxtjs/tailwindcss@npm:5.1.2":
+  version: 5.1.2
+  resolution: "@nuxtjs/tailwindcss@npm:5.1.2"
   dependencies:
-    "@nuxt/kit": ^3.0.0-rc.2
+    "@nuxt/kit": ^3.0.0-rc.3
     "@nuxt/postcss8": ^1.1.3
     "@types/tailwindcss": ^3.0.10
-    autoprefixer: ^10.4.2
+    autoprefixer: ^10.4.7
     chalk: ^4.1.2
     clear-module: ^4.1.2
     consola: ^2.15.3
-    defu: ^5.0.1
-    postcss: ^8.4.8
-    postcss-custom-properties: ^12.1.4
-    postcss-nesting: ^10.1.3
-    tailwind-config-viewer: ^1.6.3
-    tailwindcss: ^3.0.23
-    ufo: ^0.7.11
-  checksum: 0a2a7d8a971b47731ec7cdc5394b199f9ed8d7470863545601b290550803a2931b4bf57bf9e677967f3326cdeeb1e2fa5f22b155c77e2eb0971a16df16b67189
+    defu: ^6.0.0
+    postcss: ^8.4.14
+    postcss-custom-properties: ^12.1.7
+    postcss-nesting: ^10.1.7
+    tailwind-config-viewer: ^1.7.0
+    tailwindcss: ^3.0.24
+    ufo: ^0.8.4
+  checksum: 1758515906f04edcd8c3e31be88fef1f5926cb03fa9f74e6604f34b145ca8162c1896f438e8a8b02be26ab3f46e22fcd32c224b78ca760a18a913933dd4f9d32
   languageName: node
   linkType: hard
 
@@ -843,14 +853,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/forms@npm:0.5.1":
-  version: 0.5.1
-  resolution: "@tailwindcss/forms@npm:0.5.1"
+"@tailwindcss/forms@npm:0.5.2":
+  version: 0.5.2
+  resolution: "@tailwindcss/forms@npm:0.5.2"
   dependencies:
     mini-svg-data-uri: ^1.2.3
   peerDependencies:
     tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
-  checksum: c9dc0124235692db6205960a16cfc8fa09ffd6491b9989cddaaaaf92bf252b9029de2e766dc1714aed056d56f9c347d5548dbb5b9a95f512b3301e20054fdbc9
+  checksum: 3c4df23491d14b37d8cef88d0f3df80f92b684b801d59c23d600773a4ccac11353a555ca36bea68ae4a82134f9c030d1353c05890a5f0085c1c40c649f806640
   languageName: node
   linkType: hard
 
@@ -1469,7 +1479,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.2.5, autoprefixer@npm:^10.4.2":
+"autoprefixer@npm:^10.2.5":
   version: 10.4.4
   resolution: "autoprefixer@npm:10.4.4"
   dependencies:
@@ -2379,13 +2389,6 @@ __metadata:
   version: 3.2.2
   resolution: "defu@npm:3.2.2"
   checksum: 60e0a5b849bdd9ebf527d65ef721edc144a0570579115fcfd0c3c8d8b5df41304c8a7b9fe82e739f4baccf6fc637cae3e800d16132fc968369786555d4f33621
-  languageName: node
-  linkType: hard
-
-"defu@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "defu@npm:5.0.1"
-  checksum: f65556c2e8aa7789080f04c1d52fd7188d8258d9bc7f673e5bedc6be33eb6150f41844ac96aec99c798e47eb9beb97dae03c24edd73d3ddc643e4c7c72124606
   languageName: node
   linkType: hard
 
@@ -4924,6 +4927,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.3.4":
+  version: 3.3.4
+  resolution: "nanoid@npm:3.3.4"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 2fddd6dee994b7676f008d3ffa4ab16035a754f4bb586c61df5a22cf8c8c94017aadd360368f47d653829e0569a92b129979152ff97af23a558331e47e37cd9c
+  languageName: node
+  linkType: hard
+
 "needle@npm:^2.2.1":
   version: 2.9.1
   resolution: "needle@npm:2.9.1"
@@ -5709,7 +5721,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-custom-properties@npm:12.1.7, postcss-custom-properties@npm:^12.1.4":
+"postcss-custom-properties@npm:12.1.7, postcss-custom-properties@npm:^12.1.7":
   version: 12.1.7
   resolution: "postcss-custom-properties@npm:12.1.7"
   dependencies:
@@ -5965,14 +5977,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-nesting@npm:^10.1.3":
-  version: 10.1.4
-  resolution: "postcss-nesting@npm:10.1.4"
+"postcss-nesting@npm:^10.1.7":
+  version: 10.1.8
+  resolution: "postcss-nesting@npm:10.1.8"
   dependencies:
+    "@csstools/selector-specificity": ^2.0.0
     postcss-selector-parser: ^6.0.10
   peerDependencies:
     postcss: ^8.4
-  checksum: 13dd01f9e43a6f93d48d2f9d5ef08966dbc990864dec585cb799420011c0ffff5b4ec670ba4a912c47a8a57263b4eb95fce352b04ddd2eb70f715bf622ad1a3b
+  checksum: 6ba0a88c1c9951f78d2c377c43c99a3a6eea8d6e41b80146cfa7ef917dfb5750a595cb74c9b1c01329c530a2aaeaaaa88f6d2a02e04e3a8d209729dc4d28a4a7
   languageName: node
   linkType: hard
 
@@ -6164,7 +6177,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.2.15, postcss@npm:^8.4.12, postcss@npm:^8.4.8":
+"postcss@npm:^8.1.10, postcss@npm:^8.2.15, postcss@npm:^8.4.12":
   version: 8.4.12
   resolution: "postcss@npm:8.4.12"
   dependencies:
@@ -6183,6 +6196,17 @@ __metadata:
     picocolors: ^1.0.0
     source-map-js: ^1.0.2
   checksum: 514fb3552805a5d039a2d6b4df3e73f657001716ca93c0d57e6067b0473abdea70276d80afc96005c9aaff82ed5d98062bd97724d3f47ca400fba0b5e9e436ed
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.4.14":
+  version: 8.4.14
+  resolution: "postcss@npm:8.4.14"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: fe58766ff32e4becf65a7d57678995cfd239df6deed2fe0557f038b47c94e4132e7e5f68b5aa820c13adfec32e523b693efaeb65798efb995ce49ccd83953816
   languageName: node
   linkType: hard
 
@@ -6591,20 +6615,20 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@headlessui/vue": 1.6.1
+    "@headlessui/vue": 1.6.4
     "@heroicons/vue": 1.0.6
-    "@nuxtjs/tailwindcss": 5.0.4
+    "@nuxtjs/tailwindcss": 5.1.2
     "@pinia/nuxt": 0.1.9
     "@tailwindcss/aspect-ratio": 0.4.0
-    "@tailwindcss/forms": 0.5.1
+    "@tailwindcss/forms": 0.5.2
     "@tailwindcss/line-clamp": 0.4.0
     "@tailwindcss/typography": 0.5.2
     autoprefixer: 10.4.7
     nuxt: 3.0.0-rc.3
     pinia: 2.0.14
     postcss-custom-properties: 12.1.7
-    sass: 1.51.0
-    sass-loader: 12.6.0
+    sass: 1.52.2
+    sass-loader: 13.0.0
     tailwindcss: 3.0.24
   languageName: unknown
   linkType: soft
@@ -6655,9 +6679,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:12.6.0":
-  version: 12.6.0
-  resolution: "sass-loader@npm:12.6.0"
+"sass-loader@npm:13.0.0":
+  version: 13.0.0
+  resolution: "sass-loader@npm:13.0.0"
   dependencies:
     klona: ^2.0.4
     neo-async: ^2.6.2
@@ -6676,20 +6700,20 @@ __metadata:
       optional: true
     sass-embedded:
       optional: true
-  checksum: 5d73a428588150f704016aa27397941bb9246cecd2ee083b573e95d969fc080ac6a16f2fe1cc64aca08f6e70da6f3c586ee68f0efc9f527fecc360e5f1c299ec
+  checksum: f7af03813dccf0405eb02917cd10c97571ab81f42e9ea1f3da6d9e96991e076521809a452ad319d57c1a63273ce07c23ddfdbda5cd071a56d261dc28913afdaa
   languageName: node
   linkType: hard
 
-"sass@npm:1.51.0":
-  version: 1.51.0
-  resolution: "sass@npm:1.51.0"
+"sass@npm:1.52.2":
+  version: 1.52.2
+  resolution: "sass@npm:1.52.2"
   dependencies:
     chokidar: ">=3.0.0 <4.0.0"
     immutable: ^4.0.0
     source-map-js: ">=0.6.2 <2.0.0"
   bin:
     sass: sass.js
-  checksum: d674fd87be863961d5e5233a148e381a72b06ca1749ffd95a08be2c3f4aa8fc77e3e21840347a84d7d4542cbf97cd6f9bfae19ecb1f5eefa6c207a3d8f923dbc
+  checksum: d5efcbad4bc2efe638cd12665f8aeedc20f4e6b1cd2454624334f9189e9ab8a73708241232f102f6f873ee56fb64d993a67ff23bf669da5c2cf7495412007739
   languageName: node
   linkType: hard
 
@@ -7164,9 +7188,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwind-config-viewer@npm:^1.6.3":
-  version: 1.6.3
-  resolution: "tailwind-config-viewer@npm:1.6.3"
+"tailwind-config-viewer@npm:^1.7.0":
+  version: 1.7.1
+  resolution: "tailwind-config-viewer@npm:1.7.1"
   dependencies:
     "@koa/router": ^9.0.1
     commander: ^6.0.0
@@ -7181,11 +7205,11 @@ __metadata:
   bin:
     tailwind-config-viewer: cli/index.js
     tailwindcss-config-viewer: cli/index.js
-  checksum: 9f44d15422370f54cbfe260ebd8f0a28e80974222aefb82c96e5b274e195e70ea2e7da76f237bbd6b01cac5bb663dc98797f5d2f1c45714abee60b16d4a82e3b
+  checksum: e891b8ca2952338789617a33c261bc2f3ceeda28fd280a216dfb88664886fba531bddd992d010b927c7fbd7734d3ace433a08e6fb2f4aa6ad699a2b651b0431d
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.0.24, tailwindcss@npm:^3.0.23":
+"tailwindcss@npm:3.0.24, tailwindcss@npm:^3.0.24":
   version: 3.0.24
   resolution: "tailwindcss@npm:3.0.24"
   dependencies:
