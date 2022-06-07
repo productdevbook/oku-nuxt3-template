@@ -9,7 +9,7 @@ export default defineNuxtConfig({
         "@pinia/nuxt",
     ],
     build: {
-        transpile: ['@heroicons/vue'],
+        transpile: ['@heroicons/vue', '@headlessui/vue'],
     },
     postcss: {
         plugins: {
@@ -19,10 +19,5 @@ export default defineNuxtConfig({
     },
     vite: {
         logLevel: "info",
-        optimizeDeps: {
-            include: [
-                '@headlessui/vue', '@heroicons/vue/solid', '@heroicons/vue/outline', 'vue', 'pinia', 'ufo'
-            ]
-        }
     }
 });
