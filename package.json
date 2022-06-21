@@ -4,11 +4,16 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
+    "lint": "eslint .",
     "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.1",
     "@nuxtjs/tailwindcss": "5.1.2",
+    "eslint": "8.18.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-vue": "9.1.1",
     "nuxt": "3.0.0-rc.4",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.11",
