@@ -375,12 +375,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/vue@npm:1.6.4":
-  version: 1.6.4
-  resolution: "@headlessui/vue@npm:1.6.4"
+"@headlessui/vue@npm:1.6.5":
+  version: 1.6.5
+  resolution: "@headlessui/vue@npm:1.6.5"
   peerDependencies:
     vue: ^3.2.0
-  checksum: 91dbd6b6b0ee492472036999f35fd86ad6e2d1180546b35558a0b75f8c5a3182b4fce9a7145ac4f4960141d3284475156c88ae93c7a298256ddd68f7e8fa160b
+  checksum: 1c6419fc439684700dc76c67ec329b5281b65c75ee6aeffbfa5fd7905e925f619a5dc09e338e840670d476aa7f699bba74327c27ec59183b07b7cc7dd2875689
   languageName: node
   linkType: hard
 
@@ -6623,7 +6623,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "root-workspace-0b6124@workspace:."
   dependencies:
-    "@headlessui/vue": 1.6.4
+    "@headlessui/vue": 1.6.5
     "@heroicons/vue": 1.0.6
     "@nuxtjs/tailwindcss": 5.1.2
     "@pinia/nuxt": 0.1.9
