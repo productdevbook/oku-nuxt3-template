@@ -1,11 +1,25 @@
 {
   "private": true,
+  "packageManager": "yarn@3.2.1",
+  "engines": {
+    "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
+  },
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
     "start": "node .output/server/index.mjs",
     "lint": "eslint .",
     "allupdate": "yarn upgrade-interactive"
+  },
+  "dependencies": {
+    "@headlessui/vue": "1.6.5",
+    "@heroicons/vue": "1.0.6",
+    "@pinia/nuxt": "0.1.9",
+    "@tailwindcss/aspect-ratio": "0.4.0",
+    "@tailwindcss/forms": "0.5.2",
+    "@tailwindcss/line-clamp": "0.4.0",
+    "@tailwindcss/typography": "0.5.2",
+    "pinia": "2.0.14"
   },
   "devDependencies": {
     "@antfu/eslint-config": "0.25.1",
@@ -20,19 +34,5 @@
     "sass": "1.52.3",
     "sass-loader": "13.0.0",
     "typescript": "4.7.4"
-  },
-  "dependencies": {
-    "@headlessui/vue": "1.6.5",
-    "@heroicons/vue": "1.0.6",
-    "@pinia/nuxt": "0.1.9",
-    "@tailwindcss/aspect-ratio": "0.4.0",
-    "@tailwindcss/forms": "0.5.2",
-    "@tailwindcss/line-clamp": "0.4.0",
-    "@tailwindcss/typography": "0.5.2",
-    "pinia": "2.0.14"
-  },
-  "engines": {
-    "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
-  },
-  "packageManager": "yarn@3.2.1"
+  }
 }

@@ -1,10 +1,10 @@
 {
-    "recommendations": [
-        "bradlc.vscode-tailwindcss",
-        "vue.volar",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint",
-        "csstools.postcss",
-        "antfu.iconify"
-    ]
+  "recommendations": [
+    "bradlc.vscode-tailwindcss",
+    "vue.volar",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "csstools.postcss",
+    "antfu.iconify"
+  ]
 }

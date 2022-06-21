@@ -1,8 +1,25 @@
+<script lang="ts">
+import { link } from "~/types";
+export default {
+  setup() {
+    const lists = ref<link[]>([
+      { id: 1, title: "Pinia Store", url: "pinia" },
+      { id: 1, title: "Modal", url: "modal" },
+      { id: 1, title: "Menu", url: "menu" },
+      { id: 1, title: "New soon...", url: "" },
+    ]);
+    return {
+      lists,
+    };
+  },
+};
+</script>
+
 <template>
-  <div class="max-w-sm mx-auto mt-4">
+  <div class="mx-auto mt-4 max-w-sm">
     <div class="flex items-center">
       <img
-        class="w-40 h-40 rounded-full mb-4"
+        class="mb-4 h-40 w-40 rounded-full"
         height="160"
         width="160"
         src="https://avatars.githubusercontent.com/u/38668796?v=4"
@@ -10,7 +27,7 @@
       />
       <a
         target="blank"
-        class="ml-4 text-yellow-400 dark:text-green-400 font-bold"
+        class="ml-4 font-bold text-yellow-400 dark:text-green-400"
         href="https://github.com/productdevbook"
         >Follow Me Github hello</a
       >
@@ -28,24 +45,3 @@
     </ul>
   </div>
 </template>
-
-<script lang="ts">
-import { NuxtLink } from "#components";
-import { link } from "~/types";
-export default {
-  components: {
-    NuxtLink,
-  },
-  setup() {
-    const lists = ref<link[]>([
-      { id: 1, title: "Pinia Store", url: "pinia" },
-      { id: 1, title: "Modal", url: "modal" },
-      { id: 1, title: "Menu", url: "menu" },
-      { id: 1, title: "New soon...", url: "" },
-    ]);
-    return {
-      lists,
-    };
-  },
-};
-</script>
