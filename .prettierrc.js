@@ -1,0 +1,10 @@
+{
+    "singleQuote"; true,
+    "semi"; false,
+    "vueIndentScriptAndStyle"; true,
+    "tabWidth"; 2,
+    "bracketSpacing"; false,
+    "bracketSameLine"; true,
+    "printWidth"; 80
+  }
+  

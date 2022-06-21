@@ -7,10 +7,14 @@
     "allupdate": "yarn upgrade-interactive"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "0.25.1",
     "@nuxtjs/tailwindcss": "5.1.2",
     "nuxt": "3.0.0-rc.4",
+    "prettier": "2.7.1",
+    "prettier-plugin-tailwindcss": "0.1.11",
     "sass": "1.52.3",
-    "sass-loader": "13.0.0"
+    "sass-loader": "13.0.0",
+    "typescript": "4.7.4"
   },
   "dependencies": {
     "@headlessui/vue": "1.6.5",
