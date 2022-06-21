@@ -1,27 +1,5 @@
-<script>
+<script setup lang="ts">
   import {Menu, MenuButton, MenuItem, MenuItems} from "@headlessui/vue"
-  import {
-    AcademicCapIcon,
-    ArchiveIcon,
-    ArrowLeftIcon,
-    CheckCircleIcon,
-    ChevronDownIcon,
-    DuplicateIcon,
-  } from "@heroicons/vue/solid"
-  export default {
-    components: {
-      Menu,
-      MenuButton,
-      MenuItems,
-      MenuItem,
-      ChevronDownIcon,
-      ArchiveIcon,
-      DuplicateIcon,
-      CheckCircleIcon,
-      AcademicCapIcon,
-      ArrowLeftIcon,
-    },
-  }
 </script>
 
 <template>
@@ -30,11 +8,10 @@
       <Menu as="div" class="relative inline-block text-left">
         <div>
           <MenuButton
-            class="inline-flex w-full justify-center rounded-md bg-black bg-opacity-20 px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            class="inline-flex w-full justify-center rounded-md bg-black px-4 py-2 text-sm font-medium text-white hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
             Options
-            <ChevronDownIcon
-              class="ml-2 -mr-1 h-5 w-5 text-violet-200 hover:text-violet-100"
-              aria-hidden="true" />
+            <UnoIcon
+              class="i-ic-round-menu text-white-200 hover:text-white-100 -mr-1k ml-2 text-lg" />
           </MenuButton>
         </div>
 
@@ -54,10 +31,9 @@
                   :class="[
                     active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   ]">
-                  <AcademicCapIcon
-                    :active="active"
-                    class="mr-2 h-5 w-5 text-violet-400"
-                    aria-hidden="true" />Edit
+                  <UnoIcon
+                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
+                  Edit
                 </button>
               </MenuItem>
               <MenuItem v-slot="{active}">
@@ -66,10 +42,9 @@
                   :class="[
                     active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   ]">
-                  <DuplicateIcon
-                    :active="active"
-                    class="mr-2 h-5 w-5 text-violet-400"
-                    aria-hidden="true" />Duplicate
+                  <UnoIcon
+                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
+                  Duplicate
                 </button>
               </MenuItem>
             </div>
@@ -80,10 +55,9 @@
                   :class="[
                     active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   ]">
-                  <ArchiveIcon
-                    :active="active"
-                    class="mr-2 h-5 w-5 text-violet-400"
-                    aria-hidden="true" />Archive
+                  <UnoIcon
+                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
+                  Archive
                 </button>
               </MenuItem>
               <MenuItem v-slot="{active}">
@@ -92,10 +66,9 @@
                   :class="[
                     active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   ]">
-                  <CheckCircleIcon
-                    :active="active"
-                    class="mr-2 h-5 w-5 text-violet-400"
-                    aria-hidden="true" />Move
+                  <UnoIcon
+                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
+                  Move
                 </button>
               </MenuItem>
             </div>
@@ -107,10 +80,10 @@
                   :class="[
                     active ? 'bg-violet-500 text-white' : 'text-gray-900',
                   ]">
-                  <ArrowLeftIcon
-                    :active="active"
-                    class="mr-2 h-5 w-5 text-violet-400"
-                    aria-hidden="true" />Delete
+                  <UnoIcon
+                    class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
+
+                  <ArrowLeftIcon :active="active" aria-hidden="true" />Delete
                 </button>
               </MenuItem>
             </div>

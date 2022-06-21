@@ -1,5 +1,4 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
-<script lang="ts">
+<script setup lang="ts">
   import {ref} from "vue"
   import {
     Dialog,
@@ -8,25 +7,8 @@
     TransitionChild,
     TransitionRoot,
   } from "@headlessui/vue"
-  import {CheckIcon} from "@heroicons/vue/outline"
 
-  export default {
-    components: {
-      Dialog,
-      DialogOverlay,
-      DialogTitle,
-      TransitionChild,
-      TransitionRoot,
-      CheckIcon,
-    },
-    setup() {
-      const open = ref(false)
-
-      return {
-        open,
-      }
-    },
-  }
+  const open = ref(false)
 </script>
 
 <template>
@@ -72,9 +54,8 @@
               <div>
                 <div
                   class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
-                  <CheckIcon
-                    class="h-6 w-6 text-green-600"
-                    aria-hidden="true" />
+                  <UnoIcon
+                    class="i-ic-round-check h-6 w-6 text-lg text-green-600" />
                 </div>
                 <div class="mt-3 text-center sm:mt-5">
                   <DialogTitle
