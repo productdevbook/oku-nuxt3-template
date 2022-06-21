@@ -12,7 +12,7 @@
         target="blank"
         class="ml-4 text-yellow-400 dark:text-green-400 font-bold"
         href="https://github.com/productdevbook"
-        >Follow Me Github</a
+        >Follow Me Github hello</a
       >
     </div>
     <ul role="list" class="mt-10 space-y-4">
