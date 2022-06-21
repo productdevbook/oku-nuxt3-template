@@ -1,33 +1,33 @@
-<script  lang="ts">
-import { useCounter } from "~/store/counter";
+<script lang="ts">
+  import {useCounter} from "~/store/counter"
 
-export default {
+  export default {
     setup() {
-        const counter = useCounter();
-        return {
-            counter,
-        }
+      const counter = useCounter()
+      return {
+        counter,
+      }
     },
-}
-
+  }
 </script>
 
 <template>
-    <div>
-        <div class="global-text">
-            <pre>{{ counter.$state }}</pre>
-            <!-- Remove this component to get started! -->
-            <p>
-                N: {{ counter.n }}
-                <br />
-                myRef: {{ counter.myRef }}
-            </p>
+  <div>
+    <div class="global-text">
+      <pre>{{ counter.$state }}</pre>
+      <!-- Remove this component to get started! -->
+      <p>
+        N: {{ counter.n }}
+        <br />
+        myRef: {{ counter.myRef }}
+      </p>
 
-            <input class="text-black" type="text" v-model="counter.myRef" />
-            <br />
-            <input class="text-black" type="number" v-model="counter.n" />
-        </div>
-        <button class="p-4 global-text" @click="counter.increment()">+1 number click</button>
+      <input v-model="counter.myRef" class="text-black" type="text" />
+      <br />
+      <input v-model="counter.n" class="text-black" type="number" />
     </div>
+    <button class="global-text p-4" @click="counter.increment()">
+      +1 number click
+    </button>
+  </div>
 </template>
-

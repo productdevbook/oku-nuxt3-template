@@ -1,0 +1,12 @@
+{
+    "extends": [
+        "@antfu",
+        "prettier",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "@typescript-eslint/consistent-type-imports": "off",
+        "vue/no-deprecated-slot-attribute": "off",
+        "vue/no-reserved-component-names": "off"
+    }
+}

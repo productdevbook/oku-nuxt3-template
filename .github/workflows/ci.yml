@@ -1,0 +1,127 @@
+name: ci
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  install:
+    name: 📦 Install node modules
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+
+      - name: 📦 Install dependencies
+        run: yarn install
+      
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+
+  build:
+    name: 🚧 Nuxt build
+    needs: install
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+      - name: 🛠 Nuxt Build
+        run: yarn build
+      
+      - name: Cache dist
+        uses: actions/cache@v3
+        with:
+          path: dist
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+  generate:
+    name: 🚧 Nuxt generate
+    needs: install
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+      - name: 🛠 Nuxt Generate
+        run: yarn generate
+      
+      - name: Cache dist
+        uses: actions/cache@v3
+        with:
+          path: dist
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+  
+  
+  lint:
+    name: 🚧 Lint Check
+    needs: install
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        node: [16]
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'yarn'
+
+      - name: Cache node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+      - name: 💪 Lint
+        run: yarn lint
