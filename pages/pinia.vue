@@ -1,14 +1,7 @@
-<script lang="ts">
+<script setup lang="ts">
   import {useCounter} from "~/store/counter"
 
-  export default {
-    setup() {
-      const counter = useCounter()
-      return {
-        counter,
-      }
-    },
-  }
+  const counter = useCounter()
 </script>
 
 <template>

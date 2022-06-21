@@ -1,18 +1,12 @@
-<script lang="ts">
-  import {link} from "~/types"
-  export default {
-    setup() {
-      const lists = ref<link[]>([
-        {id: 1, title: "Pinia Store", url: "pinia"},
-        {id: 1, title: "Modal", url: "modal"},
-        {id: 1, title: "Menu", url: "menu"},
-        {id: 1, title: "New soon...", url: ""},
-      ])
-      return {
-        lists,
-      }
-    },
-  }
+<script setup lang="ts">
+  import {ILink} from "~/types"
+
+  const lists = ref<ILink[]>([
+    {id: 1, title: "Pinia Store", url: "pinia"},
+    {id: 1, title: "Modal", url: "modal"},
+    {id: 1, title: "Menu", url: "menu"},
+    {id: 1, title: "New soon...", url: ""},
+  ])
 </script>
 
 <template>
