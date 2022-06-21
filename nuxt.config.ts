@@ -1,4 +1,4 @@
-import { defineNuxtConfig } from "nuxt";
+import {defineNuxtConfig} from "nuxt"
 
 export default defineNuxtConfig({
   modules: ["@nuxtjs/tailwindcss"],
@@ -18,4 +18,4 @@ export default defineNuxtConfig({
   vite: {
     logLevel: "info",
   },
-});
+})

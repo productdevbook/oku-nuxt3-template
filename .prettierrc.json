@@ -1,5 +1,4 @@
 {
-  "singleQuote": true,
   "semi": false,
   "vueIndentScriptAndStyle": true,
   "tabWidth": 2,

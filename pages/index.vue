@@ -1,18 +1,18 @@
 <script lang="ts">
-import { link } from "~/types";
-export default {
-  setup() {
-    const lists = ref<link[]>([
-      { id: 1, title: "Pinia Store", url: "pinia" },
-      { id: 1, title: "Modal", url: "modal" },
-      { id: 1, title: "Menu", url: "menu" },
-      { id: 1, title: "New soon...", url: "" },
-    ]);
-    return {
-      lists,
-    };
-  },
-};
+  import {link} from "~/types"
+  export default {
+    setup() {
+      const lists = ref<link[]>([
+        {id: 1, title: "Pinia Store", url: "pinia"},
+        {id: 1, title: "Modal", url: "modal"},
+        {id: 1, title: "Menu", url: "menu"},
+        {id: 1, title: "New soon...", url: ""},
+      ])
+      return {
+        lists,
+      }
+    },
+  }
 </script>
 
 <template>
@@ -23,8 +23,7 @@ export default {
         height="160"
         width="160"
         src="https://avatars.githubusercontent.com/u/38668796?v=4"
-        alt="productfrontenddeveloper"
-      />
+        alt="productfrontenddeveloper" />
       <a
         target="blank"
         class="ml-4 font-bold text-yellow-400 dark:text-green-400"
@@ -39,8 +38,7 @@ export default {
             id: item.id,
             title: item.title,
             url: item.url,
-          }"
-        />
+          }" />
       </li>
     </ul>
   </div>
