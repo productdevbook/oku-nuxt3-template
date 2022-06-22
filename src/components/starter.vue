@@ -32,7 +32,7 @@
           alt="productdevbook" />
 
         <div
-          class="place-items-centerr grid grid-cols-2 justify-items-center gap-4 [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:rounded-md [&>*]:bg-gray-100 [&>*]:p-3 dark:[&>*]:bg-gray-600">
+          class="place-items-centerr grid grid-cols-3 justify-items-center gap-4 [&>*]:flex [&>*]:items-center [&>*]:justify-center [&>*]:rounded-md [&>*]:bg-gray-100 [&>*]:p-3 dark:[&>*]:bg-gray-600">
           <a
             target="blank"
             class="font-bold text-gray-900 hover:bg-gray-300 dark:text-white dark:hover:bg-gray-400"
@@ -45,6 +45,13 @@
             href="https://twitter.com/productdevbook"
             target="_blank">
             <UnoIcon class="i-ph-twitter-logo-duotone" />
+          </a>
+
+          <a
+            target="blank"
+            class="font-bold text-gray-900 hover:bg-gray-300 dark:text-white dark:hover:bg-gray-400"
+            href="https://discord.gg/UN8mqgC79S">
+            <UnoIcon class="i-ph-discord-logo-duotone" />
           </a>
         </div>
       </div>
