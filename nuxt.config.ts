@@ -10,6 +10,7 @@ export default defineNuxtConfig({
     // unocss plugin - https://github.com/unocss/unocss
     "@unocss/nuxt",
     "@intlify/nuxt3",
+    "@nuxtjs/color-mode",
   ],
 
   build: {
@@ -49,7 +50,11 @@ export default defineNuxtConfig({
       },
     },
   },
-
+  colorMode: {
+    classSuffix: "",
+    fallback: "light",
+    storageKey: "color-mode",
+  },
   vite: {
     logLevel: "info",
   },
