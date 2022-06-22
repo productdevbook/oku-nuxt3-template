@@ -2,6 +2,7 @@ import {defineNuxtConfig} from "nuxt"
 import presetIcons from "@unocss/preset-icons"
 
 export default defineNuxtConfig({
+  srcDir: "src",
   modules: [
     "@vueuse/nuxt",
     "@nuxtjs/tailwindcss",
