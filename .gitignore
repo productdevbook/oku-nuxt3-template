@@ -3,6 +3,8 @@ node_modules
 .nuxt
 nuxt.d.ts
 .output
+dist
+public
 
 .yarn/*
 !.yarn/patches

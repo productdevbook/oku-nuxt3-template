@@ -2,6 +2,11 @@ import {defineNuxtConfig} from "nuxt"
 import presetIcons from "@unocss/preset-icons"
 
 export default defineNuxtConfig({
+  srcDir: "src",
+  components: {
+    dirs: ["../components"],
+    global: true,
+  },
   modules: [
     "@vueuse/nuxt",
     "@nuxtjs/tailwindcss",
@@ -52,6 +57,7 @@ export default defineNuxtConfig({
   },
   colorMode: {
     classSuffix: "",
+    classPrefix: "",
     fallback: "light",
     storageKey: "color-mode",
   },
