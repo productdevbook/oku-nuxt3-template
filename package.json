@@ -24,8 +24,12 @@
   "devDependencies": {
     "@antfu/eslint-config": "0.25.1",
     "@iconify-json/ic": "1.1.4",
+    "@iconify-json/ph": "1.1.1",
+    "@iconify-json/twemoji": "1.1.4",
+    "@intlify/nuxt3": "0.2.2",
     "@nuxtjs/tailwindcss": "5.1.2",
     "@unocss/nuxt": "0.39.3",
+    "@vueuse/nuxt": "8.7.4",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
