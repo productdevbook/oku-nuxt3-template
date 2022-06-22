@@ -24,3 +24,4 @@ auto.d.ts
 src-tauri
 auto-imports.d.ts
 components.d.ts
+dist
