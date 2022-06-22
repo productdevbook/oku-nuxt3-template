@@ -1,6 +1,6 @@
 import {IntlifyModuleOptions} from "@intlify/nuxt3"
 
-import en from "./locales/en-US.json"
+import en from "./src/locales/en-US.json"
 
 declare module "@nuxt/schema" {
   interface NuxtConfig {
