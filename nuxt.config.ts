@@ -1,6 +1,5 @@
 import {defineNuxtConfig} from "nuxt"
 import presetIcons from "@unocss/preset-icons"
-import {IntlifyModuleOptions} from "@intlify/nuxt3"
 
 export default defineNuxtConfig({
   modules: [
@@ -47,7 +46,7 @@ export default defineNuxtConfig({
     tsConfig: {
       compilerOptions: {
         strict: true,
-        types: ["@pinia/nuxt", "@intlify/nuxt3"],
+        types: ["@pinia/nuxt", "@intlify/nuxt3", "./type.d.ts"],
       },
     },
   },

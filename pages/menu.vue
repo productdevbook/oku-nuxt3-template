@@ -82,8 +82,7 @@
                   ]">
                   <UnoIcon
                     class="i-ic:baseline-12mp mr-2 text-lg text-violet-400" />
-
-                  <ArrowLeftIcon :active="active" aria-hidden="true" />Delete
+                  Delete
                 </button>
               </MenuItem>
             </div>
