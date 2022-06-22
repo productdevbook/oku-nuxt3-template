@@ -1023,6 +1023,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@nuxtjs/color-mode@npm:3.1.4":
+  version: 3.1.4
+  resolution: "@nuxtjs/color-mode@npm:3.1.4"
+  dependencies:
+    "@nuxt/kit": ^3.0.0-rc.3
+    lodash.template: ^4.5.0
+    pathe: ^0.3.0
+  checksum: dd32dd89ef4dab7bcf1808d0a446a1a2373b4cad78a69d0f2c3ebea28d42e9497072f0b59734e31cc56e7b9fc9f374310be3edd4225a09324188de33181efad2
+  languageName: node
+  linkType: hard
+
 "@nuxtjs/tailwindcss@npm:5.1.2":
   version: 5.1.2
   resolution: "@nuxtjs/tailwindcss@npm:5.1.2"
@@ -8467,6 +8478,7 @@ __metadata:
     "@iconify-json/ph": 1.1.1
     "@iconify-json/twemoji": 1.1.4
     "@intlify/nuxt3": 0.2.2
+    "@nuxtjs/color-mode": 3.1.4
     "@nuxtjs/tailwindcss": 5.1.2
     "@pinia/nuxt": 0.1.9
     "@tailwindcss/aspect-ratio": 0.4.0

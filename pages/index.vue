@@ -12,8 +12,13 @@
 <template>
   <div class="mx-auto mt-4 max-w-sm">
     <div class="mb-10 flex items-center justify-between">
-      <div>@productdevbook</div>
-      <TemLanguageChange />
+      <a target="_blank" href="https://twitter.com/productdevbook"
+        >@productdevbook</a
+      >
+      <div class="flex space-x-2">
+        <TemLanguageChange />
+        <TemColorChange />
+      </div>
     </div>
     <div class="flex items-center rounded-lg dark:bg-gray-700">
       <div class="flex w-full items-center justify-between px-4 py-2">
