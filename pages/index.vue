@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import {ILink} from "~/types"
-
+  const {t} = useLang()
   const lists = ref<ILink[]>([
     {id: 1, title: "Pinia Store", url: "pinia"},
     {id: 1, title: "Modal", url: "modal"},
@@ -11,20 +11,27 @@
 
 <template>
   <div class="mx-auto mt-4 max-w-sm">
-    <div class="flex items-center">
-      <img
-        class="mb-4 h-40 w-40 rounded-full"
-        height="160"
-        width="160"
-        src="https://avatars.githubusercontent.com/u/38668796?v=4"
-        alt="productfrontenddeveloper" />
-      <a
-        target="blank"
-        class="ml-4 font-bold text-yellow-400 dark:text-green-400"
-        href="https://github.com/productdevbook"
-        >Follow Me Github hello</a
-      >
+    <div class="mb-10 flex items-center justify-between">
+      <div>@productdevbook</div>
+      <TemLanguageChange />
     </div>
+    <div class="flex items-center rounded-lg dark:bg-gray-700">
+      <div class="flex w-full items-center justify-between px-4 py-2">
+        <img
+          class="h-20 w-20 rounded-full"
+          height="160"
+          width="160"
+          src="https://avatars.githubusercontent.com/u/38668796?v=4"
+          alt="productfrontenddeveloper" />
+        <a
+          target="blank"
+          class="ml-4 font-bold text-gray-900 dark:text-white"
+          href="https://github.com/productdevbook"
+          >{{ t("follow") }}</a
+        >
+      </div>
+    </div>
+
     <ul role="list" class="mt-10 space-y-4">
       <li v-for="item in lists" :key="item.id">
         <List

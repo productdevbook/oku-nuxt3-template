@@ -1,17 +1,22 @@
 import {defineNuxtConfig} from "nuxt"
 import presetIcons from "@unocss/preset-icons"
+import {IntlifyModuleOptions} from "@intlify/nuxt3"
 
 export default defineNuxtConfig({
   modules: [
+    "@vueuse/nuxt",
     "@nuxtjs/tailwindcss",
     // pinia plugin - https://pinia.esm.dev
     "@pinia/nuxt",
     // unocss plugin - https://github.com/unocss/unocss
     "@unocss/nuxt",
+    "@intlify/nuxt3",
   ],
+
   build: {
     transpile: ["@headlessui/vue"],
   },
+
   unocss: {
     uno: false,
     preflight: false,
@@ -24,7 +29,29 @@ export default defineNuxtConfig({
         },
       }),
     ],
+    safelist: ["i-twemoji-flag-us-outlying-islands", "i-twemoji-flag-turkey"],
   },
+
+  // localization - i18n config
+  intlify: {
+    localeDir: "locales",
+    vueI18n: {
+      locale: "en-US",
+      fallbackLocale: "en-US",
+      availableLocales: ["en-US", "tr-TR"],
+      sync: true,
+    },
+  },
+
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        strict: true,
+        types: ["@pinia/nuxt", "@intlify/nuxt3"],
+      },
+    },
+  },
+
   vite: {
     logLevel: "info",
   },
