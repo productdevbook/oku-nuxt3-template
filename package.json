@@ -22,7 +22,7 @@
     "pinia": "2.0.14"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.25.1",
+    "@antfu/eslint-config": "0.25.2",
     "@iconify-json/carbon": "1.1.5",
     "@iconify-json/ic": "1.1.4",
     "@iconify-json/ph": "1.1.1",
