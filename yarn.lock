@@ -530,12 +530,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/ic@npm:1.1.4":
-  version: 1.1.4
-  resolution: "@iconify-json/ic@npm:1.1.4"
+"@iconify-json/ic@npm:1.1.6":
+  version: 1.1.6
+  resolution: "@iconify-json/ic@npm:1.1.6"
   dependencies:
-    "@iconify/types": ^1.1.0
-  checksum: a481b019477d2fd2a37bf138d7b3129303eea5ddd72f55556e92b1943af0cd88a3cb4173713ab2dc0e5e161692e9600d00c35a559060654b93cbe2d640fe5ec8
+    "@iconify/types": "*"
+  checksum: ff659947ef1bf7a0c413b9249dad7bcc851c9581d585b9329135d82d72a02b48c8a7021ca71a7d41ef547ae7f2ec9942cc34e4940bfe82421371ac370fd8c238
   languageName: node
   linkType: hard
 
@@ -557,7 +557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/types@npm:^1.0.12, @iconify/types@npm:^1.1.0":
+"@iconify/types@npm:*, @iconify/types@npm:^1.0.12, @iconify/types@npm:^1.1.0":
   version: 1.1.0
   resolution: "@iconify/types@npm:1.1.0"
   checksum: beffcdbf14e879ff74e79ac29ea0f4f4874f9df632f1994d97395b3f05cbeebaf10f1abc73cf850dc7444924cd57ed92e0e2ca55bacfe3374eff7542d489fbd0
@@ -8484,7 +8484,7 @@ __metadata:
     "@antfu/eslint-config": 0.25.1
     "@headlessui/vue": 1.6.5
     "@iconify-json/carbon": 1.1.5
-    "@iconify-json/ic": 1.1.4
+    "@iconify-json/ic": 1.1.6
     "@iconify-json/ph": 1.1.1
     "@iconify-json/twemoji": 1.1.4
     "@intlify/nuxt3": 0.2.2
