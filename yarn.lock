@@ -548,16 +548,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/twemoji@npm:1.1.4":
-  version: 1.1.4
-  resolution: "@iconify-json/twemoji@npm:1.1.4"
+"@iconify-json/twemoji@npm:1.1.5":
+  version: 1.1.5
+  resolution: "@iconify-json/twemoji@npm:1.1.5"
   dependencies:
-    "@iconify/types": ^1.1.0
-  checksum: 3895dd6697bc7547514096945a41593815a939f810773926585b26637045b3b3db7af773fe2fb38826ec4cc90ee042757a8aaa34cf149673132f46cc62a4b161
+    "@iconify/types": "*"
+  checksum: 9907d60bc52159074fb5b3d9808a6fa30008212add81ff09d0635b9b8af01844d136153b57ef2e1dc224f49b8e61464a1e9cbf732f17d1a99596ef2af12e5ab4
   languageName: node
   linkType: hard
 
-"@iconify/types@npm:^1.0.12, @iconify/types@npm:^1.1.0":
+"@iconify/types@npm:*, @iconify/types@npm:^1.0.12, @iconify/types@npm:^1.1.0":
   version: 1.1.0
   resolution: "@iconify/types@npm:1.1.0"
   checksum: beffcdbf14e879ff74e79ac29ea0f4f4874f9df632f1994d97395b3f05cbeebaf10f1abc73cf850dc7444924cd57ed92e0e2ca55bacfe3374eff7542d489fbd0
@@ -8486,7 +8486,7 @@ __metadata:
     "@iconify-json/carbon": 1.1.5
     "@iconify-json/ic": 1.1.4
     "@iconify-json/ph": 1.1.1
-    "@iconify-json/twemoji": 1.1.4
+    "@iconify-json/twemoji": 1.1.5
     "@intlify/nuxt3": 0.2.2
     "@nuxtjs/color-mode": 3.1.4
     "@nuxtjs/tailwindcss": 5.1.2
