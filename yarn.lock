@@ -539,12 +539,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify-json/ph@npm:1.1.1":
-  version: 1.1.1
-  resolution: "@iconify-json/ph@npm:1.1.1"
+"@iconify-json/ph@npm:1.1.2":
+  version: 1.1.2
+  resolution: "@iconify-json/ph@npm:1.1.2"
   dependencies:
-    "@iconify/types": ^1.0.12
-  checksum: c18772dce6fbf8bc03d7b38b4480e635379c565c7916ad5031d8106891f5ec200bca735629237ed33445b7a3f0d7a1280a10d5912a748027b5b2e88396063c92
+    "@iconify/types": "*"
+  checksum: 9f0910e77191a01657ffa121e861eaf3e707bcc491cd6f247d31616a60491177a3cf266d08875b5e922b27ef11ee1262fa40805e8c308cd3e88d221af1ebb4a7
   languageName: node
   linkType: hard
 
@@ -557,7 +557,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/types@npm:^1.0.12, @iconify/types@npm:^1.1.0":
+"@iconify/types@npm:*, @iconify/types@npm:^1.1.0":
   version: 1.1.0
   resolution: "@iconify/types@npm:1.1.0"
   checksum: beffcdbf14e879ff74e79ac29ea0f4f4874f9df632f1994d97395b3f05cbeebaf10f1abc73cf850dc7444924cd57ed92e0e2ca55bacfe3374eff7542d489fbd0
@@ -8485,7 +8485,7 @@ __metadata:
     "@headlessui/vue": 1.6.5
     "@iconify-json/carbon": 1.1.5
     "@iconify-json/ic": 1.1.4
-    "@iconify-json/ph": 1.1.1
+    "@iconify-json/ph": 1.1.2
     "@iconify-json/twemoji": 1.1.4
     "@intlify/nuxt3": 0.2.2
     "@nuxtjs/color-mode": 3.1.4
