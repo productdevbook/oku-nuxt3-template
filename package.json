@@ -30,7 +30,7 @@
     "@intlify/nuxt3": "0.2.2",
     "@nuxtjs/color-mode": "3.1.4",
     "@nuxtjs/tailwindcss": "5.1.2",
-    "@unocss/nuxt": "0.39.3",
+    "@unocss/nuxt": "0.41.1",
     "@vueuse/nuxt": "8.7.4",
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
