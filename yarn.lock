@@ -8506,7 +8506,7 @@ __metadata:
     prettier: 2.7.1
     prettier-plugin-tailwindcss: 0.1.11
     sass: 1.52.3
-    sass-loader: 13.0.0
+    sass-loader: 13.0.2
     typescript: 4.7.4
   languageName: unknown
   linkType: soft
@@ -8566,9 +8566,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:13.0.0":
-  version: 13.0.0
-  resolution: "sass-loader@npm:13.0.0"
+"sass-loader@npm:13.0.2":
+  version: 13.0.2
+  resolution: "sass-loader@npm:13.0.2"
   dependencies:
     klona: ^2.0.4
     neo-async: ^2.6.2
@@ -8587,7 +8587,7 @@ __metadata:
       optional: true
     sass-embedded:
       optional: true
-  checksum: f7af03813dccf0405eb02917cd10c97571ab81f42e9ea1f3da6d9e96991e076521809a452ad319d57c1a63273ce07c23ddfdbda5cd071a56d261dc28913afdaa
+  checksum: 6306712cc75bd4b4260ce67178778c92110089485f358b5956b6b12aba15a55e5c7287154daaf8b32678891df915b7bcda7356991afe8bf08ca7356ed30eb448
   languageName: node
   linkType: hard
 
