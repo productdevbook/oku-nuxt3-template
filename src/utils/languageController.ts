@@ -1,4 +1,5 @@
 import { useI18n } from "vue-i18n";
+import { availableLocales } from "../locales/availableLocales";
 
 export function languageController() {
   // composable
@@ -8,7 +9,8 @@ export function languageController() {
   // methods
   const readBrowserLanguage = (): string => {
     try {
-      return window ? window.navigator.language : "en-US";
+      const lang = window ? window.navigator.language : "en-US";
+      return availableLocales[lang] ? lang : "en-US";
     } catch (error) {
       return "en-US";
     }
