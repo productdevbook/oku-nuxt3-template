@@ -1,5 +1,5 @@
-import {defineNuxtConfig} from "nuxt"
-import presetIcons from "@unocss/preset-icons"
+import { defineNuxtConfig } from "nuxt";
+import presetIcons from "@unocss/preset-icons";
 
 export default defineNuxtConfig({
   srcDir: "src",
@@ -59,4 +59,4 @@ export default defineNuxtConfig({
   vite: {
     logLevel: "info",
   },
-})
+});

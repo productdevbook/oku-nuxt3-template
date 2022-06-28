@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss/types').Config} */
 
-const defaultTheme = require("tailwindcss/defaultTheme")
+const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
   darkMode: "class",
@@ -29,4 +29,4 @@ module.exports = {
     require("@tailwindcss/line-clamp"),
     require("@tailwindcss/aspect-ratio"),
   ],
-}
+};

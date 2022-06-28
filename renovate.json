@@ -1,3 +1,20 @@
 {
-  "extends": ["config:base"]
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "groupName": "Types",
+      "packagePatterns": ["^@types/"],
+      "automerge": true
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchUpdateTypes": ["major"],
+      "groupName": "NPM dependencies (major)"
+    },
+    {
+      "matchDatasources": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "NPM dependencies (non-major)"
+    }
+  ]
 }

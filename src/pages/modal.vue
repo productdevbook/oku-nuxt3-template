@@ -1,14 +1,14 @@
 <script setup lang="ts">
-  import {ref} from "vue"
-  import {
-    Dialog,
-    DialogOverlay,
-    DialogTitle,
-    TransitionChild,
-    TransitionRoot,
-  } from "@headlessui/vue"
+import { ref } from "vue";
+import {
+  Dialog,
+  DialogOverlay,
+  DialogTitle,
+  TransitionChild,
+  TransitionRoot,
+} from "@headlessui/vue";
 
-  const open = ref(false)
+const open = ref(false);
 </script>
 
 <template>
@@ -20,9 +20,11 @@
       <Dialog
         as="div"
         class="fixed inset-0 z-10 overflow-y-auto"
-        @close="open = false">
+        @close="open = false"
+      >
         <div
-          class="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+          class="flex min-h-screen items-end justify-center px-4 pt-4 pb-20 text-center sm:block sm:p-0"
+        >
           <TransitionChild
             as="template"
             enter="ease-out duration-300"
@@ -30,9 +32,11 @@
             enter-to="opacity-100"
             leave="ease-in duration-200"
             leave-from="opacity-100"
-            leave-to="opacity-0">
+            leave-to="opacity-0"
+          >
             <DialogOverlay
-              class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" />
+              class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
+            />
           </TransitionChild>
 
           <!-- This element is to trick the browser into centering the modal contents. -->
@@ -48,14 +52,18 @@
             enter-to="opacity-100 translate-y-0 sm:scale-100"
             leave="ease-in duration-200"
             leave-from="opacity-100 translate-y-0 sm:scale-100"
-            leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95">
+            leave-to="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+          >
             <div
-              class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle">
+              class="inline-block transform overflow-hidden rounded-lg bg-white px-4 pt-5 pb-4 text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm sm:p-6 sm:align-middle"
+            >
               <div>
                 <div
-                  class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100">
+                  class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100"
+                >
                   <UnoIcon
-                    class="i-ic-round-check h-6 w-6 text-lg text-green-600" />
+                    class="i-ic-round-check h-6 w-6 text-lg text-green-600"
+                  />
                 </div>
                 <div class="mt-3 text-center sm:mt-5">
                   <DialogTitle
@@ -75,7 +83,8 @@
                 <button
                   type="button"
                   class="inline-flex w-full justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 sm:text-sm"
-                  @click="open = false">
+                  @click="open = false"
+                >
                   Go back to dashboard
                 </button>
               </div>

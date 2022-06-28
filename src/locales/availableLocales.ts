@@ -1,9 +1,9 @@
 export interface ILocales {
   [key: string]: {
-    name: string
-    iso: string
-    flag: string
-  }
+    name: string;
+    iso: string;
+    flag: string;
+  };
 }
 
 export const availableLocales: ILocales = {
@@ -17,4 +17,4 @@ export const availableLocales: ILocales = {
     iso: "tr-TR",
     flag: "i-twemoji-flag-turkey",
   },
-}
+};
