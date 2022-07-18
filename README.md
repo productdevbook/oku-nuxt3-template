@@ -3,6 +3,7 @@
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 
 ## Preview
+![image](https://user-images.githubusercontent.com/38668796/179501879-b1efa419-8419-4c27-a79e-d185cb2884b7.png)
 
 
 [![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/productdevbook/nuxt3-app)
