@@ -16,9 +16,9 @@ We recommend to look at the [documentation](https://v3.nuxtjs.org).
 This starter template also includes:
 
 - [Tailwind CSS v3](https://github.com/tailwindlabs/tailwindcss)
+- [Eslint](https://eslint.org)
 - [Headless UI](https://headlessui.dev/vue/menu) - unstyled, fully accessible UI components, designed to integrate beautifully with Tailwind CSS
-- [Heroicons](https://github.com/tailwindlabs/heroicons#vue) - beautiful hand-crafted SVG icons,
-by the makers of Tailwind CSS
+- [Icones](https://github.com/antfu/icones) - beautiful hand-crafted SVG icons with [Unocss](https://github.com/unocss/unocss) used. 
 
 First-party plugins needed for Tailwind UI:
 
