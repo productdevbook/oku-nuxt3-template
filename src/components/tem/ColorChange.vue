@@ -5,25 +5,25 @@ import {
   ListboxLabel,
   ListboxOption,
   ListboxOptions,
-} from "@headlessui/vue";
-const colorMode = useColorMode();
+} from '@headlessui/vue'
+const colorMode = useColorMode()
 const availableColor = ref([
   {
     id: 1,
-    name: "system",
-    icon: "i-ph-laptop-duotone",
+    name: 'system',
+    icon: 'i-ph-laptop-duotone',
   },
   {
     id: 2,
-    name: "dark",
-    icon: "i-ph-moon-stars-duotone",
+    name: 'dark',
+    icon: 'i-ph-moon-stars-duotone',
   },
   {
     id: 3,
-    name: "light",
-    icon: "i-ph-sun-dim-duotone",
+    name: 'light',
+    icon: 'i-ph-sun-dim-duotone',
   },
-]);
+])
 </script>
 
 <template>
@@ -33,7 +33,9 @@ const availableColor = ref([
       as="div"
       class="relative flex items-center"
     >
-      <ListboxLabel class="sr-only">Theme</ListboxLabel>
+      <ListboxLabel class="sr-only">
+        Theme
+      </ListboxLabel>
       <ListboxButton type="button" title="Change Color">
         <div
           class="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-700"

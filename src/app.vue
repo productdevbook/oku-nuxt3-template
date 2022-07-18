@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import { InitApp } from "~/utils/initApp";
-InitApp();
-const locale = useState<string>("locale.i18n");
+import { InitApp } from '~/utils/initApp'
+InitApp()
+const locale = useState<string>('locale.i18n')
 </script>
 
 <template>

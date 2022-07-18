@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue'
 import {
   Dialog,
   DialogOverlay,
   DialogTitle,
   TransitionChild,
   TransitionRoot,
-} from "@headlessui/vue";
+} from '@headlessui/vue'
 
-const open = ref(false);
+const open = ref(false)
 </script>
 
 <template>
@@ -43,8 +43,7 @@ const open = ref(false);
           <span
             class="hidden sm:inline-block sm:h-screen sm:align-middle"
             aria-hidden="true"
-            >&#8203;</span
-          >
+          >&#8203;</span>
           <TransitionChild
             as="template"
             enter="ease-out duration-300"
@@ -69,8 +68,9 @@ const open = ref(false);
                   <DialogTitle
                     as="h3"
                     class="text-lg font-medium leading-6 text-gray-900"
-                    >Payment successful</DialogTitle
                   >
+                    Payment successful
+                  </DialogTitle>
                   <div class="mt-2">
                     <p class="text-sm text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

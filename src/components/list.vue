@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import { ILink } from "~/types";
+import { ILink } from '~/types'
 defineProps({
   link: {
     type: Object as () => ILink,
     required: true,
   },
-});
+})
 </script>
 
 <template>

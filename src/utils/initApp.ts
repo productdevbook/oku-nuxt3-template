@@ -1,9 +1,9 @@
-import { languageController } from "./languageController";
+import { languageController } from './languageController'
 
 export function InitApp() {
-  const language = languageController();
+  const language = languageController()
 
   return {
     language,
-  };
+  }
 }

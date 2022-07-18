@@ -5,16 +5,16 @@ import {
   ListboxLabel,
   ListboxOption,
   ListboxOptions,
-} from "@headlessui/vue";
-import { useI18n } from "vue-i18n";
-import { availableLocales } from "~/locales/availableLocales";
+} from '@headlessui/vue'
+import { useI18n } from 'vue-i18n'
+import { availableLocales } from '~/locales/availableLocales'
 
-const { locale } = useI18n();
+const { locale } = useI18n()
 
-const localeUserSetting = useCookie("locale");
+const localeUserSetting = useCookie('locale')
 watch(localeUserSetting, () => {
-  locale.value = localeUserSetting.value;
-});
+  locale.value = localeUserSetting.value
+})
 </script>
 
 <template>
@@ -24,7 +24,9 @@ watch(localeUserSetting, () => {
       as="div"
       class="relative flex items-center"
     >
-      <ListboxLabel class="sr-only">Theme</ListboxLabel>
+      <ListboxLabel class="sr-only">
+        Theme
+      </ListboxLabel>
       <ListboxButton type="button" title="Change Language">
         <div
           class="flex h-10 w-10 items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-700"
