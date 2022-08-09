@@ -22,7 +22,7 @@
     "pinia": "2.0.17"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.25.2",
+    "@antfu/eslint-config": "0.26.0",
     "@iconify-json/carbon": "1.1.7",
     "@iconify-json/ic": "1.1.8",
     "@iconify-json/ph": "1.1.2",
@@ -30,8 +30,8 @@
     "@intlify/nuxt3": "0.2.3",
     "@nuxtjs/color-mode": "3.1.4",
     "@nuxtjs/tailwindcss": "5.3.1",
-    "@unocss/nuxt": "0.45.1",
-    "@vueuse/nuxt": "9.0.2",
+    "@unocss/nuxt": "0.45.5",
+    "@vueuse/nuxt": "9.1.0",
     "eslint": "8.21.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
@@ -39,7 +39,7 @@
     "nuxt": "3.0.0-rc.6",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
-    "sass": "1.54.0",
+    "sass": "1.54.3",
     "sass-loader": "13.0.2",
     "typescript": "4.7.4"
   }
