@@ -15,14 +15,14 @@
   "dependencies": {
     "@headlessui/vue": "1.6.7",
     "@pinia/nuxt": "0.4.1",
-    "@tailwindcss/aspect-ratio": "0.4.1",
-    "@tailwindcss/forms": "0.5.2",
-    "@tailwindcss/line-clamp": "0.4.1",
-    "@tailwindcss/typography": "0.5.6",
+    "@tailwindcss/aspect-ratio": "0.4.2",
+    "@tailwindcss/forms": "0.5.3",
+    "@tailwindcss/line-clamp": "0.4.2",
+    "@tailwindcss/typography": "0.5.7",
     "pinia": "2.0.21"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.26.2",
+    "@antfu/eslint-config": "0.26.3",
     "@iconify-json/carbon": "1.1.7",
     "@iconify-json/ic": "1.1.9",
     "@iconify-json/ph": "1.1.2",
@@ -36,7 +36,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.4.0",
-    "nuxt": "3.0.0-rc.8",
+    "nuxt": "3.0.0-rc.9",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
     "sass": "1.54.8",
