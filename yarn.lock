@@ -575,15 +575,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@huntersofbook/naive-ui-nuxt@npm:0.1.5":
-  version: 0.1.5
-  resolution: "@huntersofbook/naive-ui-nuxt@npm:0.1.5"
+"@huntersofbook/naive-ui-nuxt@npm:0.1.7":
+  version: 0.1.7
+  resolution: "@huntersofbook/naive-ui-nuxt@npm:0.1.7"
   dependencies:
     "@css-render/vue3-ssr": ^0.15.11
     "@nuxt/kit": ^3.0.0-rc.10
     defu: ^6.1.0
     naive-ui: ^2.33.3
-  checksum: 2b9963c7aff6fb297bb7fc9e76b250bb398dffe9a8e698310262115663323fd1cac7a379cec0bf9dea0cf39772465b15a84d67eb9081d98140bc98cc1098af4d
+  checksum: 65b9eb8772c65a5a776aa40991135ef25240923de4a54f908559ab9af7249e619891febae1a9e84e6c2e7e9974e93cf3981d060b34881a455c83099d88895d1a
   languageName: node
   linkType: hard
 
@@ -8509,7 +8509,7 @@ __metadata:
   dependencies:
     "@antfu/eslint-config": 0.26.3
     "@headlessui/vue": 1.7.1
-    "@huntersofbook/naive-ui-nuxt": 0.1.5
+    "@huntersofbook/naive-ui-nuxt": 0.1.7
     "@iconify-json/carbon": 1.1.7
     "@iconify-json/ic": 1.1.9
     "@iconify-json/ph": 1.1.2
