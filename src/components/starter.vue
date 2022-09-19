@@ -6,6 +6,7 @@ const lists = computed<ILink[]>(() => [
   { id: 1, title: 'Pinia Store', url: 'pinia', icon: 'i-carbon-store' },
   { id: 1, title: t('modal'), url: 'modal', icon: 'i-carbon-collapse-all' },
   { id: 1, title: 'Menu', url: 'menu', icon: 'i-carbon-menu' },
+  { id: 1, title: 'Naive UI', url: 'naive', icon: 'i-carbon-milestone' },
   { id: 1, title: 'New soon...', url: '', icon: 'i-carbon-milestone' },
 ])
 </script>
