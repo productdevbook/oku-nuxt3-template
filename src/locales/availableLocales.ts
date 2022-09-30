@@ -9,12 +9,12 @@ export interface ILocales {
 export const availableLocales: ILocales = {
   en: {
     name: 'English',
-    iso: 'en-US',
+    iso: 'en',
     flag: 'i-twemoji-flag-us-outlying-islands',
   },
   tr: {
     name: 'Turkce',
-    iso: 'tr-TR',
+    iso: 'tr',
     flag: 'i-twemoji-flag-turkey',
   },
 }
