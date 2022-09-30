@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
 import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
@@ -10,7 +9,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     // unocss plugin - https://github.com/unocss/unocss
     '@unocss/nuxt',
-    '@intlify/nuxt3',
+    '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
     // https://github.com/huntersofbook/huntersofbook/tree/main/packages/naive-ui-nuxt
     '@huntersofbook/naive-ui-nuxt',
@@ -34,13 +33,28 @@ export default defineNuxtConfig({
   },
 
   // localization - i18n config
-  intlify: {
-    localeDir: 'locales',
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        file: 'en-US.json',
+      },
+      { code: 'tr', file: 'tr-TR.json' },
+    ],
+    defaultLocale: 'tr',
+    lazy: true,
+    langDir: 'locales/',
+    strategy: 'prefix_except_default',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root', // recommended
+    },
     vueI18n: {
-      locale: 'en-US',
-      fallbackLocale: 'en-US',
-      availableLocales: ['en-US', 'tr-TR'],
-      sync: true,
+      legacy: false,
+      locale: 'tr',
+      fallbackLocale: 'tr',
+      availableLocales: ['en', 'tr'],
     },
   },
 
@@ -48,7 +62,7 @@ export default defineNuxtConfig({
     tsConfig: {
       compilerOptions: {
         strict: true,
-        types: ['@pinia/nuxt', '@intlify/nuxt3', './type.d.ts'],
+        types: ['@pinia/nuxt', './type.d.ts'],
       },
     },
   },

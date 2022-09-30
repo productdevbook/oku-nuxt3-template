@@ -3,11 +3,12 @@ import {
   Listbox,
   ListboxButton,
   ListboxLabel,
-  ListboxOption,
   ListboxOptions,
 } from '@headlessui/vue'
 import { useI18n } from 'vue-i18n'
 import { availableLocales } from '~/locales/availableLocales'
+
+const switchLocalePath = useSwitchLocalePath()
 
 const { locale } = useI18n()
 
@@ -37,10 +38,10 @@ watch(localeUserSetting, () => {
       <ListboxOptions
         class="absolute top-full right-0 z-[999] mt-2 w-40 overflow-hidden rounded-lg bg-white text-sm font-semibold text-gray-700 shadow-lg shadow-gray-300 outline-none dark:bg-gray-800 dark:text-white dark:shadow-gray-500 dark:ring-0"
       >
-        <ListboxOption
+        <NuxtLink
           v-for="lang in availableLocales"
           :key="lang.iso"
-          :value="lang.iso"
+          :to="switchLocalePath(lang.iso)"
           class="flex w-full cursor-pointer items-center justify-between py-2 px-3"
           :class="{
             'text-white-500 bg-gray-200 dark:bg-gray-500/50':
@@ -55,7 +56,7 @@ watch(localeUserSetting, () => {
           <span class="flex items-center justify-center text-sm">
             <UnoIcon :class="lang.flag" class="text-base" />
           </span>
-        </ListboxOption>
+        </NuxtLink>
       </ListboxOptions>
     </Listbox>
   </div>
