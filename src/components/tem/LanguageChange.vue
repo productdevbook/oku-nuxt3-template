@@ -12,21 +12,20 @@ const switchLocalePath = useSwitchLocalePath()
 
 const { locale } = useI18n()
 
-const localeUserSetting = useCookie('locale')
-watch(localeUserSetting, () => {
-  locale.value = localeUserSetting.value
+const local = computed(() => {
+  return locale.value
 })
 </script>
 
 <template>
   <div>
     <Listbox
-      v-model="localeUserSetting"
+      v-model="local"
       as="div"
       class="relative flex items-center"
     >
       <ListboxLabel class="sr-only">
-        Theme
+        Change Language
       </ListboxLabel>
       <ListboxButton type="button" title="Change Language">
         <div
@@ -45,9 +44,9 @@ watch(localeUserSetting, () => {
           class="flex w-full cursor-pointer items-center justify-between py-2 px-3"
           :class="{
             'text-white-500 bg-gray-200 dark:bg-gray-500/50':
-              localeUserSetting === lang.iso,
+              local === lang.iso,
             'hover:bg-gray-200 dark:hover:bg-gray-700/30':
-              localeUserSetting !== lang.iso,
+              local !== lang.iso,
           }"
         >
           <span class="truncate">
