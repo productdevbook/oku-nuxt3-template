@@ -15,7 +15,7 @@
   "dependencies": {
     "@headlessui/vue": "1.7.3",
     "@huntersofbook/naive-ui-nuxt": "0.3.9",
-    "@nuxtjs/i18n": "8.0.0-alpha.3",
+    "@nuxtjs/i18n": "8.0.0-beta.1",
     "@pinia/nuxt": "0.4.3",
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/forms": "0.5.3",
