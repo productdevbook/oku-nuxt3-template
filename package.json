@@ -30,7 +30,7 @@
     "@iconify-json/ph": "1.1.2",
     "@iconify-json/twemoji": "1.1.5",
     "@nuxtjs/color-mode": "3.1.8",
-    "@nuxtjs/tailwindcss": "5.3.5",
+    "@nuxtjs/tailwindcss": "6.0.1",
     "@unocss/nuxt": "0.45.30",
     "@vueuse/nuxt": "9.3.1",
     "eslint": "8.25.0",
