@@ -19,20 +19,38 @@ jobs:
         node: [16]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'yarn'
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: 📦 Install dependencies
-        run: yarn install
-      
-      - name: Cache node_modules
-        uses: actions/cache@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v3
         with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+          node-version: 16
+
+      - uses: pnpm/action-setup@v2.2.4
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+     
+            
+      - name: 📦 Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+
 
 
   build:
@@ -50,22 +68,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn'
 
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
       - name: 🛠 Nuxt Build
-        run: yarn build
-      
-      - name: Cache dist
-        uses: actions/cache@v3
-        with:
-          path: dist
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+        run: pnpm build
 
   generate:
     name: 🚧 Nuxt generate
@@ -82,22 +93,15 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn'
 
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
       - name: 🛠 Nuxt Generate
-        run: yarn generate
-      
-      - name: Cache dist
-        uses: actions/cache@v3
-        with:
-          path: dist
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+        run: pnpm generate
   
   
   lint:
@@ -115,13 +119,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: 'yarn'
 
-      - name: Cache node_modules
-        uses: actions/cache@v3
-        with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        run: |
+          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
 
       - name: 💪 Lint
-        run: yarn lint
+        run: pnpm lint
