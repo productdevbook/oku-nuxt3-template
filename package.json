@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "yarn@3.2.4",
+  "packageManager": "yarn@3.3.0",
   "engines": {
     "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
   },
@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "1.7.4",
-    "@huntersofbook/naive-ui-nuxt": "0.4.5",
+    "@huntersofbook/naive-ui-nuxt": "0.5.0",
     "@nuxtjs/i18n": "8.0.0-beta.4",
     "@pinia/nuxt": "0.4.3",
     "@tailwindcss/aspect-ratio": "0.4.2",
@@ -24,7 +24,7 @@
     "pinia": "2.0.23"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.30.1",
+    "@antfu/eslint-config": "0.31.0",
     "@iconify-json/carbon": "1.1.10",
     "@iconify-json/ic": "1.1.9",
     "@iconify-json/ph": "1.1.2",
@@ -37,11 +37,11 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.7.0",
-    "nuxt": "3.0.0-rc.13",
+    "nuxt": "3.0.0",
     "prettier": "2.7.1",
     "prettier-plugin-tailwindcss": "0.1.13",
     "sass": "1.56.1",
     "sass-loader": "13.2.0",
-    "typescript": "4.8.4"
+    "typescript": "4.9.3"
   }
 }
