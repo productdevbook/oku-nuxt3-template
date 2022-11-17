@@ -51,7 +51,6 @@ jobs:
         run: pnpm install --frozen-lockfile
 
 
-
   build:
     name: 🚧 Nuxt build
     needs: install
@@ -60,37 +59,30 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-
-      - uses: pnpm/action-setup@v2.2.4
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
       
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      - name: Cache node_modules
+        uses: actions/cache@v3
         with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-    
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
+
       - name: 🛠 Nuxt Build
         run: pnpm build
 
@@ -102,38 +94,30 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-
-      - uses: pnpm/action-setup@v2.2.4
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
       
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      - name: Cache node_modules
+        uses: actions/cache@v3
         with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
      
-
       - name: 🛠 Nuxt Generate
         run: pnpm generate
   
@@ -146,37 +130,29 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Install Node.js
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: 16
-
-      - uses: pnpm/action-setup@v2.2.4
-        name: Install pnpm
-        id: pnpm-install
-        with:
-          version: 7
-          run_install: false
-
-      - name: Get pnpm store directory
-        id: pnpm-cache
-        run: |
-          echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
       
-      - uses: actions/cache@v3
-        name: Setup pnpm cache
+      - name: Cache node_modules
+        uses: actions/cache@v3
         with:
-          path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-pnpm-store-
-     
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: 💪 Lint
         run: pnpm lint
