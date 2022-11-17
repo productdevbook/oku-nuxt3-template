@@ -16,23 +16,34 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'yarn'
+      - name: Checkout
+        uses: actions/checkout@v3
 
-      - name: 📦 Install dependencies
-        run: yarn install
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
       
       - name: Cache node_modules
         uses: actions/cache@v3
+        id: cache-node-modules
         with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install Dependencies
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: pnpm i
 
 
   build:
@@ -43,29 +54,32 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'yarn'
+      - name: Checkout
+        uses: actions/checkout@v3
 
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
+      
       - name: Cache node_modules
         uses: actions/cache@v3
         with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: 🛠 Nuxt Build
-        run: yarn build
-      
-      - name: Cache dist
-        uses: actions/cache@v3
-        with:
-          path: dist
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+        run: pnpm build
 
   generate:
     name: 🚧 Nuxt generate
@@ -75,29 +89,32 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'yarn'
+      - name: Checkout
+        uses: actions/checkout@v3
 
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
+      
       - name: Cache node_modules
         uses: actions/cache@v3
         with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
-
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
+     
       - name: 🛠 Nuxt Generate
-        run: yarn generate
-      
-      - name: Cache dist
-        uses: actions/cache@v3
-        with:
-          path: dist
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+        run: pnpm generate
   
   
   lint:
@@ -108,20 +125,29 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16]
+        node-version: [18]
+        pnpm-version: [7]
 
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node }}
-          cache: 'yarn'
+      - name: Checkout
+        uses: actions/checkout@v3
 
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: ${{ matrix.pnpm-version }}
+
+      - name: Set up Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          cache: 'pnpm'
+          node-version: ${{ matrix.node-version }}
+      
       - name: Cache node_modules
         uses: actions/cache@v3
         with:
-          path: node_modules
-          key: ${{ matrix.os }}-node-v${{ matrix.node }}-${{ github.sha }}
+          path: |
+            node_modules
+          key: modules-${{ hashFiles('pnpm-lock.yaml') }}
 
       - name: 💪 Lint
-        run: yarn lint
+        run: pnpm lint
