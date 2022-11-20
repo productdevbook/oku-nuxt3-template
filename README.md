@@ -37,7 +37,7 @@ Best Nuxt with Plugins:
 Make sure to install the dependencies
 
 ```bash
-yarn install
+pnpm install
 ```
 
 ## Development
@@ -45,7 +45,7 @@ yarn install
 Start the development server on http://localhost:3000
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 ## Production
@@ -53,37 +53,11 @@ yarn dev
 Build the application for production:
 
 ```bash
-yarn build
+pnpm build
 ```
 
 ```bash
-yarn start
+pnpm start
 ```
-
-## Dependencies Update
-
-If you want to update the libraries, I left a nice command for you. Select it with space and press enter.
-
-```bash
-yarn allupdate
-```
-Example
-```
-➜  nuxt3-app git:(master) yarn allupdate
-yarn run v1.22.11
-$ yarn upgrade-interactive --latest
-info Color legend : 
- "<red>"    : Major Update backward-incompatible updates 
- "<yellow>" : Minor Update backward-compatible features 
- "<green>"  : Patch Update backward-compatible bug fixes
-? Choose which packages to update. (Press <space> to select, <a> to toggle all, <i> to invert selection)
- devDependencies
-   name   range   from                       to                      url
-❯◯ nuxt3  latest  3.0.0-27237303.6acfdcd  ❯  3.0.0-27238235.a1bcc53  
-```
-
-## Stay in touch
-- Website - [https://productdevbook.com](https://productdevbook.com/)
-- Twitter - [@productdevbook](https://twitter.com/productdevbook)
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
