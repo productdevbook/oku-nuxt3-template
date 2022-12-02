@@ -71,6 +71,11 @@ export default defineNuxtConfig({
     fallback: 'light',
     storageKey: 'color-mode',
   },
+
+  tailwindcss: {
+    configPath: './tailwind.config.ts',
+  },
+
   vite: {
     logLevel: 'info',
   },
