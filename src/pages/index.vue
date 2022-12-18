@@ -1,3 +1,4 @@
 <template>
-  <Starter />
+  <Header />
+  <!-- <Starter /> -->
 </template>

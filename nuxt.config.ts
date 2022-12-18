@@ -1,35 +1,35 @@
-import presetIcons from '@unocss/preset-icons'
-
 export default defineNuxtConfig({
   srcDir: 'src',
+  imports: {
+    dirs: ['store'],
+  },
   modules: [
+    '@pinia/nuxt',
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
     // pinia plugin - https://pinia.esm.dev
     '@pinia/nuxt',
-    // unocss plugin - https://github.com/unocss/unocss
-    '@unocss/nuxt',
     '@nuxtjs/i18n',
     '@nuxtjs/color-mode',
-    // https://github.com/huntersofbook/huntersofbook/tree/main/packages/naive-ui-nuxt
-    '@huntersofbook/naive-ui-nuxt',
+    '@huntersofbook/plausible-nuxt',
+    '@nuxtjs/partytown',
+    'nuxt-icon',
+    'pinceau/nuxt',
+    '@nuxtjs/fontaine',
+    'nuxt-headlessui',
   ],
+  css: ['~/assets/css/fonts/font.css', '~/assets/css/tailwind.css'],
+
   build: {
-    transpile: ['@headlessui/vue'],
+    transpile: [
+      /^@apollo\/client/,
+      '@vue/apollo-composable',
+      '@headlessui/vue',
+      'leaflet-geoman'],
   },
-  unocss: {
-    uno: false,
+
+  pinceau: {
     preflight: false,
-    icons: true,
-    presets: [
-      presetIcons({
-        scale: 1.2,
-        extraProperties: {
-          display: 'inline-block',
-        },
-      }),
-    ],
-    safelist: ['i-twemoji-flag-us-outlying-islands', 'i-twemoji-flag-turkey'],
   },
 
   // localization - i18n config
@@ -37,9 +37,9 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
-        file: 'en-US.json',
+        file: 'en.json',
       },
-      { code: 'tr', file: 'tr-TR.json' },
+      { code: 'tr', file: 'tr.json' },
     ],
     defaultLocale: 'tr',
     lazy: true,
@@ -66,17 +66,35 @@ export default defineNuxtConfig({
       },
     },
   },
+
   colorMode: {
     classSuffix: '',
     fallback: 'light',
     storageKey: 'color-mode',
   },
-
-  tailwindcss: {
-    configPath: './tailwind.config.ts',
-  },
+  ignore: ['**/*.test.ts', '**/*.spec.ts', '**/*.test.tsx', '**/*.spec.tsx'],
 
   vite: {
     logLevel: 'info',
+    define: {
+      'process.env.POLYGON_CLIPPING_MAX_QUEUE_SIZE': '1000000',
+      'process.env.POLYGON_CLIPPING_MAX_SWEEPLINE_SEGMENTS': '1000000',
+      '__DEV__': (process.env.mode === 'development').toString(),
+    },
+  },
+
+  tailwindcss: {
+    configPath: './tailwind.config.js',
+    viewer: false,
+  },
+
+  plausible: {
+    init: {
+      domain: 'localhost.com',
+      apiHost: process.env.PLAUSIBLE,
+      trackLocalhost: true,
+    },
+    // If this is loaded you can make it true, https://github.com/nuxt-modules/partytown
+    partytown: true,
   },
 })
