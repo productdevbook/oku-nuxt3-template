@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "yarn@3.3.0",
+  "packageManager": "yarn@3.3.1",
   "engines": {
     "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
   },
@@ -30,9 +30,9 @@
     "@iconify-json/ph": "1.1.3",
     "@iconify-json/twemoji": "1.1.7",
     "@nuxtjs/color-mode": "3.2.0",
-    "@nuxtjs/tailwindcss": "6.1.3",
-    "@unocss/nuxt": "0.47.6",
-    "@vueuse/nuxt": "9.7.0",
+    "@nuxtjs/tailwindcss": "6.2.0",
+    "@unocss/nuxt": "0.48.0",
+    "@vueuse/nuxt": "9.8.2",
     "eslint": "8.30.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
@@ -40,7 +40,7 @@
     "nuxt": "3.0.0",
     "prettier": "2.8.1",
     "prettier-plugin-tailwindcss": "0.2.1",
-    "sass": "1.57.0",
+    "sass": "1.57.1",
     "sass-loader": "13.2.0",
     "typescript": "4.9.4"
   }
