@@ -13,7 +13,7 @@
     "allupdate": "yarn upgrade-interactive"
   },
   "dependencies": {
-    "@headlessui/vue": "1.7.9",
+    "@headlessui/vue": "1.7.10",
     "@huntersofbook/naive-ui-nuxt": "0.6.0",
     "@nuxtjs/i18n": "8.0.0-beta.9",
     "@pinia/nuxt": "0.4.6",
@@ -30,17 +30,17 @@
     "@iconify-json/ph": "1.1.4",
     "@iconify-json/twemoji": "1.1.11",
     "@nuxtjs/color-mode": "3.2.0",
-    "@nuxtjs/tailwindcss": "6.4.0",
-    "@unocss/nuxt": "0.49.4",
-    "@vueuse/nuxt": "9.12.0",
+    "@nuxtjs/tailwindcss": "6.4.1",
+    "@unocss/nuxt": "0.49.7",
+    "@vueuse/nuxt": "9.13.0",
     "eslint": "8.34.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.9.0",
-    "nuxt": "3.2.0",
+    "nuxt": "3.2.2",
     "prettier": "2.8.4",
-    "prettier-plugin-tailwindcss": "0.2.2",
-    "sass": "1.58.1",
+    "prettier-plugin-tailwindcss": "0.2.3",
+    "sass": "1.58.3",
     "sass-loader": "13.2.0",
     "typescript": "4.9.5"
   }
