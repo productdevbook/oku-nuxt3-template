@@ -13,7 +13,7 @@
     "allupdate": "yarn upgrade-interactive"
   },
   "dependencies": {
-    "@headlessui/vue": "1.7.11",
+    "@headlessui/vue": "1.7.12",
     "@huntersofbook/naive-ui-nuxt": "0.7.1",
     "@nuxtjs/i18n": "8.0.0-beta.10",
     "@pinia/nuxt": "0.4.7",
@@ -21,25 +21,25 @@
     "@tailwindcss/forms": "0.5.3",
     "@tailwindcss/line-clamp": "0.4.2",
     "@tailwindcss/typography": "0.5.9",
-    "pinia": "2.0.32"
+    "pinia": "2.0.33"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.35.3",
+    "@antfu/eslint-config": "0.36.0",
     "@iconify-json/carbon": "1.1.16",
     "@iconify-json/ic": "1.1.13",
-    "@iconify-json/ph": "1.1.4",
+    "@iconify-json/ph": "1.1.5",
     "@iconify-json/twemoji": "1.1.11",
     "@nuxtjs/color-mode": "3.2.0",
     "@nuxtjs/tailwindcss": "6.4.1",
-    "@unocss/nuxt": "0.50.3",
+    "@unocss/nuxt": "0.50.4",
     "@vueuse/nuxt": "9.13.0",
     "eslint": "8.35.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.7.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.9.0",
     "nuxt": "3.2.3",
     "prettier": "2.8.4",
-    "prettier-plugin-tailwindcss": "0.2.3",
+    "prettier-plugin-tailwindcss": "0.2.4",
     "sass": "1.58.3",
     "sass-loader": "13.2.0",
     "typescript": "4.9.5"
