@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "yarn@3.4.1",
+  "packageManager": "yarn@3.5.0",
   "engines": {
     "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
   },
@@ -24,24 +24,24 @@
     "pinia": "2.0.33"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.36.0",
+    "@antfu/eslint-config": "0.37.0",
     "@iconify-json/carbon": "1.1.16",
     "@iconify-json/ic": "1.1.13",
     "@iconify-json/ph": "1.1.5",
     "@iconify-json/twemoji": "1.1.11",
     "@nuxtjs/color-mode": "3.2.0",
-    "@nuxtjs/tailwindcss": "6.6.0",
+    "@nuxtjs/tailwindcss": "6.6.4",
     "@unocss/nuxt": "0.50.6",
     "@vueuse/nuxt": "9.13.0",
     "eslint": "8.36.0",
-    "eslint-config-prettier": "8.7.0",
+    "eslint-config-prettier": "8.8.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-vue": "9.9.0",
-    "nuxt": "3.3.1",
-    "prettier": "2.8.4",
-    "prettier-plugin-tailwindcss": "0.2.4",
-    "sass": "1.59.3",
-    "sass-loader": "13.2.0",
+    "eslint-plugin-vue": "9.10.0",
+    "nuxt": "3.3.2",
+    "prettier": "2.8.7",
+    "prettier-plugin-tailwindcss": "0.2.5",
+    "sass": "1.60.0",
+    "sass-loader": "13.2.1",
     "typescript": "4.9.5"
   }
 }
