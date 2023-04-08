@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { darkTheme, lightTheme } from 'naive-ui'
+
 const color = useColorMode()
 const theme = computed(() => {
   return color.preference === 'system' ? (color.value ? lightTheme : darkTheme) : color.value === 'light' ? lightTheme : darkTheme
