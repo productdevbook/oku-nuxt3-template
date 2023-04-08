@@ -6,6 +6,7 @@ import {
   ListboxOption,
   ListboxOptions,
 } from '@headlessui/vue'
+
 const colorMode = useColorMode()
 const availableColor = ref([
   {

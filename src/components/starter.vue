@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ILink } from '~/types'
+
 const { t } = useLang()
 
 const lists = computed<ILink[]>(() => [
