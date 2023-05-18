@@ -50,12 +50,12 @@ export default defineNuxtConfig({
       cookieKey: 'i18n_redirected',
       redirectOn: 'root', // recommended
     },
-    vueI18n: {
-      legacy: false,
-      locale: 'tr',
-      fallbackLocale: 'tr',
-      availableLocales: ['en', 'tr'],
-    },
+    // vueI18n: {
+    //   legacy: false,
+    //   locale: 'tr',
+    //   fallbackLocale: 'tr',
+    //   availableLocales: ['en', 'tr'],
+    // },
   },
 
   typescript: {
