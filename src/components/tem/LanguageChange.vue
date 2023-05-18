@@ -6,7 +6,7 @@ import {
   ListboxOptions,
 } from '@headlessui/vue'
 import { useI18n } from 'vue-i18n'
-import { availableLocales } from '~/locales/availableLocales'
+import { availableLocales } from '~/availableLocales'
 
 const switchLocalePath = useSwitchLocalePath()
 
