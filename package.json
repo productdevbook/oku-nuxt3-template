@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@headlessui/vue": "1.7.13",
-    "@huntersofbook/naive-ui-nuxt": "0.7.1",
+    "@huntersofbook/naive-ui-nuxt": "1.0.0",
     "@nuxtjs/i18n": "8.0.0-beta.12",
     "@pinia/nuxt": "0.4.11",
     "@tailwindcss/aspect-ratio": "0.4.2",
