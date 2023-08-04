@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@8.6.6",
+  "packageManager": "pnpm@8.6.11",
   "engines": {
     "node": "^16.11.0 || ^17.0.0 || || ^18.0.0"
   },
@@ -13,32 +13,32 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@headlessui/vue": "1.7.14",
-    "@huntersofbook/naive-ui-nuxt": "1.0.0",
-    "@nuxtjs/i18n": "8.0.0-beta.13",
+    "@headlessui/vue": "1.7.15",
+    "@huntersofbook/naive-ui-nuxt": "1.1.0",
+    "@nuxtjs/i18n": "8.0.0-rc.2",
     "@pinia/nuxt": "0.4.11",
     "@tailwindcss/aspect-ratio": "0.4.2",
-    "@tailwindcss/forms": "0.5.3",
+    "@tailwindcss/forms": "0.5.4",
     "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/typography": "0.5.9",
-    "pinia": "2.1.4"
+    "pinia": "2.1.6"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.39.7",
+    "@antfu/eslint-config": "0.40.0",
     "@iconify-json/carbon": "1.1.18",
     "@iconify-json/ic": "1.1.13",
     "@iconify-json/ph": "1.1.5",
     "@iconify-json/twemoji": "1.1.11",
     "@nuxtjs/color-mode": "3.3.0",
     "@nuxtjs/tailwindcss": "6.8.0",
-    "@unocss/nuxt": "0.53.4",
-    "@vueuse/nuxt": "10.2.1",
-    "eslint": "8.44.0",
-    "eslint-config-prettier": "8.8.0",
+    "@unocss/nuxt": "0.54.1",
+    "@vueuse/nuxt": "10.3.0",
+    "eslint": "8.46.0",
+    "eslint-config-prettier": "8.10.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-vue": "9.15.1",
-    "nuxt": "3.6.2",
-    "sass": "1.63.6",
+    "eslint-plugin-vue": "9.16.1",
+    "nuxt": "3.6.5",
+    "sass": "1.64.2",
     "sass-loader": "13.3.2",
     "typescript": "5.1.6"
   },
