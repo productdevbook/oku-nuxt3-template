@@ -2,6 +2,7 @@ import presetIcons from '@unocss/preset-icons'
 
 export default defineNuxtConfig({
   srcDir: 'src',
+  devtools: true,
   modules: [
     '@vueuse/nuxt',
     '@nuxtjs/tailwindcss',
@@ -73,10 +74,19 @@ export default defineNuxtConfig({
   },
 
   tailwindcss: {
-    configPath: './tailwind.config.ts',
+    configPath: './tailwind.config.js',
   },
 
   vite: {
     logLevel: 'info',
+  },
+
+  postcss: {
+    plugins: {
+      'postcss-nested': {},
+      'postcss-import': {},
+      'tailwindcss/nesting': {},
+      'tailwindcss': {},
+    },
   },
 })

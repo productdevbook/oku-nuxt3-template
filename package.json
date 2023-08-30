@@ -19,7 +19,6 @@
     "@pinia/nuxt": "0.4.11",
     "@tailwindcss/aspect-ratio": "0.4.2",
     "@tailwindcss/forms": "0.5.6",
-    "@tailwindcss/line-clamp": "0.4.4",
     "@tailwindcss/typography": "0.5.9",
     "pinia": "2.1.6"
   },
@@ -29,22 +28,16 @@
     "@iconify-json/ic": "1.1.14",
     "@iconify-json/ph": "1.1.6",
     "@iconify-json/twemoji": "1.1.12",
+    "@nuxt/devtools": "^0.8.2",
     "@nuxtjs/color-mode": "3.3.0",
     "@nuxtjs/tailwindcss": "6.8.0",
     "@unocss/nuxt": "0.55.3",
     "@vueuse/nuxt": "10.4.1",
     "eslint": "8.48.0",
-    "eslint-config-prettier": "8.10.0",
-    "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-vue": "9.17.0",
     "nuxt": "3.7.0",
     "sass": "1.66.1",
     "sass-loader": "13.3.2",
     "typescript": "5.2.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "consola": "3.1.0"
-    }
   }
 }
