@@ -23,12 +23,12 @@
     "pinia": "2.1.6"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "0.41.0",
+    "@antfu/eslint-config": "2.11.4",
     "@iconify-json/carbon": "1.1.20",
     "@iconify-json/ic": "1.1.14",
     "@iconify-json/ph": "1.1.6",
     "@iconify-json/twemoji": "1.1.12",
-    "@nuxt/devtools": "^0.8.2",
+    "@nuxt/devtools": "^1.0.0",
     "@nuxtjs/color-mode": "3.3.0",
     "@nuxtjs/tailwindcss": "6.8.0",
     "@unocss/nuxt": "0.55.3",
@@ -37,7 +37,7 @@
     "eslint-plugin-vue": "9.17.0",
     "nuxt": "3.7.0",
     "sass": "1.66.1",
-    "sass-loader": "13.3.2",
+    "sass-loader": "14.1.1",
     "typescript": "5.2.2"
   }
 }
